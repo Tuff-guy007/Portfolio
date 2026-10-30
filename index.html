@@ -1,0 +1,488 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Oluwatobi Olaopa</title>
+<meta name="description" content="Oluwatobi Olaopa: founder of Revynex, growth strategist, performance marketer, digital marketing specialist and marketing analyst. Sheffield, UK.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Figtree:wght@400;500;600;700&display=swap">
+<style>
+/* Layout: soft off-white page, serif display for names and numbers, pastel stat boxes,
+   a mint "toolkit" band of colour-topped category boxes holding logo pills. Light-only by design. */
+:root{
+  color-scheme:light;
+  --bg:#F7F8F9; --surface:#FFFFFF; --ink:#14302B; --text:#24332F; --muted:#5B6B67; --line:#DCE3E1;
+  --teal:#13806E; --band:#E7F1EE;
+  --mint:#EAF2F0; --mint-b:#CFE0DB;
+  --rose:#F6EBF0; --rose-b:#E9D2DC; --rose-ink:#C0245C;
+  --sand:#F5F1EA; --sand-b:#E5DDCF; --sand-ink:#B4621A;
+  --sky:#EAEEF6; --sky-b:#D3DBEC; --sky-ink:#2C46B5;
+  --serif:"Instrument Serif", "Iowan Old Style", Georgia, serif;
+  --sans:"Figtree", "Segoe UI", system-ui, sans-serif;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+@media (prefers-reduced-motion: reduce){html{scroll-behavior:auto}*{transition:none!important;animation:none!important}}
+body{background:var(--bg);color:var(--text);font:400 16px/1.6 var(--sans);letter-spacing:.012em;-webkit-font-smoothing:antialiased}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);z-index:20;background:var(--bg)}
+a{color:inherit}
+p{margin:0}
+h1,h2,h3{margin:0;text-wrap:balance}
+:focus-visible{outline:2px solid var(--teal);outline-offset:3px;border-radius:6px}
+.wrap{max-width:1140px;margin:0 auto;padding-left:max(24px,env(safe-area-inset-left,0px));padding-right:max(24px,env(safe-area-inset-right,0px))}
+.eyebrow{font:600 14px/1 var(--sans);letter-spacing:.08em;text-transform:uppercase;color:var(--teal)}
+.serif{font-family:var(--serif);font-weight:400}
+
+/* Header */
+header.top{position:sticky;top:env(safe-area-inset-top,0px);z-index:15;background:color-mix(in srgb,var(--bg) 92%,transparent);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+.top .wrap{display:flex;align-items:center;justify-content:space-between;gap:16px;padding-block:20px}
+.name{font:400 clamp(30px,4vw,38px)/1 var(--serif);color:var(--ink);text-decoration:none;letter-spacing:-.01em}
+.name i{font-style:normal;color:var(--teal)}
+.menu{display:flex;gap:28px;list-style:none;margin:0;padding:0;font-size:15px;font-weight:500}
+.menu a{text-decoration:none;color:var(--muted)}
+.menu a:hover{color:var(--ink)}
+.burger{display:none;background:none;border:0;padding:8px;cursor:pointer;color:var(--ink)}
+.drawer{border-top:1px solid var(--line)}
+.drawer ul{list-style:none;margin:0;padding:8px 0 16px;display:grid}
+.drawer a{display:block;padding:12px 0;text-decoration:none;font-weight:500;border-bottom:1px solid var(--line)}
+@media (max-width:860px){.menu{display:none}.burger{display:block}}
+
+/* Hero */
+.hero{padding-block:72px 40px}
+.hero .wrap{display:grid;grid-template-columns:1.25fr .75fr;gap:56px;align-items:end}
+.hero h1{font:400 clamp(46px,7vw,86px)/1 var(--serif);color:var(--ink);letter-spacing:-.015em;margin-top:22px}
+.hero h1 em{color:var(--teal)}
+.hero .lede{font-size:18px;color:var(--muted);max-width:56ch;margin-top:22px}
+.ctas{display:flex;flex-wrap:wrap;gap:12px;margin-top:30px}
+.btn{display:inline-flex;align-items:center;gap:8px;padding:13px 22px;border-radius:999px;font:600 15px/1 var(--sans);text-decoration:none;background:var(--ink);color:#fff;border:1px solid var(--ink)}
+.btn.ghost{background:transparent;color:var(--ink);border-color:var(--line)}
+.btn:hover{opacity:.9}
+.profile{background:var(--surface);border:1px solid var(--line);border-radius:16px;padding:24px;display:grid;gap:14px}
+.avatar{width:64px;height:64px;border-radius:50%;background:var(--mint);border:1px solid var(--mint-b);display:grid;place-items:center;font:700 20px/1 var(--sans);letter-spacing:.04em;color:var(--teal)}
+.profile dl{margin:0;display:grid;gap:0}
+.profile dl div{display:flex;justify-content:space-between;gap:12px;padding-block:10px;border-top:1px solid var(--line);font-size:14px}
+.profile dt{color:var(--muted)} .profile dd{margin:0;font-weight:600;text-align:right;color:var(--ink)}
+.status{display:inline-flex;align-items:center;gap:8px;font-size:14px;font-weight:600;color:var(--teal)}
+.status::before{content:"";width:8px;height:8px;border-radius:50%;background:var(--teal)}
+@media (max-width:860px){.hero .wrap{grid-template-columns:1fr;gap:36px}}
+
+/* Specialties */
+.specs{list-style:none;margin:0;padding:0 0 64px;display:flex;flex-wrap:wrap;gap:14px 44px;font-size:17px;color:var(--muted);letter-spacing:.02em}
+.specs li{display:flex;align-items:center;gap:14px}
+.specs li::before{content:"";width:7px;height:7px;border-radius:50%;background:var(--teal);flex:none}
+
+/* Stat boxes */
+.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:22px;padding-bottom:96px}
+.stat{border:1.5px solid;border-radius:14px;padding:30px 28px 34px;display:grid;gap:18px;align-content:start}
+.stat .lab{font:500 13px/1.6 var(--sans);letter-spacing:.09em;text-transform:uppercase;color:var(--muted)}
+.stat b{font:400 clamp(52px,6vw,68px)/1 var(--serif);letter-spacing:-.02em}
+.stat p{font-size:17px;color:var(--text)}
+.s1{background:var(--mint);border-color:var(--mint-b)} .s1 b{color:var(--teal)}
+.s2{background:var(--rose);border-color:var(--rose-b)} .s2 b{color:var(--rose-ink)}
+.s3{background:var(--sand);border-color:var(--sand-b)} .s3 b{color:var(--sand-ink)}
+.s4{background:var(--sky);border-color:var(--sky-b)} .s4 b{color:var(--sky-ink)}
+@media (max-width:1000px){.stats{grid-template-columns:repeat(2,1fr)}}
+@media (max-width:520px){.stats{gap:14px}.stat{padding:22px 18px 26px}.stat p{font-size:15px}}
+
+/* Roles */
+.roles{display:grid;grid-template-columns:repeat(4,1fr);gap:22px}
+.role{background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:28px 26px 30px;display:grid;gap:12px;align-content:start;position:relative;overflow:hidden}
+.role::before{content:"";position:absolute;inset:0 0 auto;height:5px;background:var(--rc)}
+.role .ri{width:46px;height:46px;border-radius:9px;display:grid;place-items:center;background:color-mix(in srgb,var(--rc) 13%,#fff);color:var(--rc);margin-top:4px}
+.role .ri svg{width:24px;height:24px}
+.role h3{font:400 30px/1.1 var(--serif);color:var(--ink)}
+.role p{color:var(--muted);font-size:15px}
+.role ul{list-style:none;margin:4px 0 0;padding:0;display:flex;flex-wrap:wrap;gap:6px}
+.role li{font-size:13px;font-weight:600;padding:5px 10px;border-radius:999px;background:color-mix(in srgb,var(--rc) 9%,#fff);color:var(--rc)}
+@media (max-width:1000px){.roles{grid-template-columns:repeat(2,1fr)}}
+@media (max-width:560px){.roles{grid-template-columns:1fr}}
+.job.founder{border-color:var(--mint-b);background:linear-gradient(180deg,var(--mint),var(--surface) 140px)}
+
+/* Section shell */
+.sec{padding-block:96px}
+.sec.band{background:var(--band);border-block:1px solid var(--line)}
+.shead{display:grid;gap:14px;margin-bottom:44px;max-width:720px}
+.shead h2{font:400 clamp(38px,5vw,56px)/1.05 var(--serif);color:var(--ink);letter-spacing:-.01em}
+.shead p{color:var(--muted);font-size:17px}
+
+/* About */
+.about{display:grid;grid-template-columns:1.2fr .8fr;gap:56px}
+.about .acopy{display:grid;gap:18px;font-size:18px;max-width:62ch}
+.about .acopy strong{color:var(--ink);font-weight:600}
+.pillars{display:grid;gap:14px;align-content:start}
+.pillar{background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:20px 22px}
+.pillar h3{font:700 17px/1.3 var(--sans);color:var(--ink)}
+.pillar p{color:var(--muted);font-size:15px;margin-top:6px}
+@media (max-width:860px){.about{grid-template-columns:1fr}}
+
+/* Toolkit */
+.tgrid{display:grid;grid-template-columns:repeat(2,1fr);gap:24px}
+.tgroup:last-child:nth-child(odd){grid-column:1/-1}
+.tgroup{position:relative;border:1.5px solid color-mix(in srgb,var(--c) 16%,#D9E2DF);border-top:0;border-radius:14px;background:color-mix(in srgb,var(--c) 6%,#F6FAF8);padding:30px 30px 32px;min-width:0}
+.tgroup::before{content:"";position:absolute;left:-1.5px;right:-1.5px;top:0;height:5px;border-radius:14px 14px 0 0;background:var(--c)}
+.thead{display:flex;justify-content:space-between;align-items:center;margin-top:6px}
+.ticon{width:46px;height:46px;border-radius:9px;display:grid;place-items:center;background:color-mix(in srgb,var(--c) 14%,#fff);color:var(--c)}
+.ticon svg{width:24px;height:24px}
+.tcount{font-weight:500;font-size:15px;color:var(--c)}
+.tgroup h3{font:700 21px/1.3 var(--sans);color:var(--ink);margin-top:26px;letter-spacing:.01em}
+.tgroup>p{color:var(--muted);font-size:15px;margin-top:6px}
+.tools{list-style:none;margin:26px 0 0;padding:0;display:flex;flex-wrap:wrap;gap:12px}
+.tool{display:flex;align-items:center;gap:12px;background:var(--surface);border:1px solid #E3E9E7;border-radius:10px;padding:8px 16px 8px 9px;font-size:16px;font-weight:500;color:var(--text);box-shadow:0 1px 2px rgba(20,48,43,.05)}
+.logo{width:34px;height:34px;border-radius:7px;display:grid;place-items:center;flex:none;border:1px solid #EEF1F0}
+.logo svg{width:22px;height:22px}
+.logo.mono{color:#fff;font:700 11px/1 var(--sans);letter-spacing:.02em;border:0}
+@media (max-width:900px){.tgrid{grid-template-columns:1fr}}
+@media (max-width:520px){.tgroup{padding:24px 18px 26px}.tool{font-size:15px;padding-right:12px}}
+
+/* Experience */
+.jobs{display:grid;gap:20px}
+.job{background:var(--surface);border:1px solid var(--line);border-radius:16px;padding:32px;display:grid;grid-template-columns:220px 1fr;gap:36px}
+.job>div{min-width:0}
+.when{font-size:14px;color:var(--muted);font-weight:500}
+.tag{display:inline-block;margin-top:12px;padding:5px 12px;border-radius:999px;font-size:13px;font-weight:600;background:var(--mint);color:var(--teal);border:1px solid var(--mint-b)}
+.job h3{font:400 32px/1.1 var(--serif);color:var(--ink)}
+.co{font-weight:600;color:var(--teal);margin-top:6px}
+.job ul{list-style:none;margin:18px 0 0;padding:0;display:grid;gap:11px;max-width:74ch}
+.job li{position:relative;padding-left:22px}
+.job li::before{content:"";position:absolute;left:2px;top:.62em;width:7px;height:7px;border-radius:50%;background:var(--teal)}
+.hl{font-weight:700;color:var(--ink);background:linear-gradient(transparent 62%,#CFE8E0 62%);white-space:nowrap}
+@media (max-width:760px){.job{grid-template-columns:1fr;gap:12px;padding:24px 20px}}
+
+/* Case studies */
+.cases{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+.case{border:1.5px solid;border-radius:14px;padding:28px;display:grid;gap:14px;align-content:start}
+.case .lab{font:500 13px/1.5 var(--sans);letter-spacing:.09em;text-transform:uppercase;color:var(--muted)}
+.case h3{font:700 19px/1.3 var(--sans);color:var(--ink)}
+.case p{color:var(--text);font-size:15px}
+.fromto{display:flex;align-items:baseline;gap:12px;font-family:var(--serif)}
+.fromto s{font-size:30px;color:var(--muted);text-decoration-thickness:1.5px}
+.fromto b{font-size:54px;font-weight:400;line-height:1}
+.case.s1 b{color:var(--teal)} .case.s2 b{color:var(--rose-ink)} .case.s3 b{color:var(--sand-ink)}
+@media (max-width:900px){.cases{grid-template-columns:1fr}}
+
+/* Projects */
+.projects{display:grid;grid-template-columns:repeat(2,1fr);gap:22px}
+.pj{background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:28px;display:grid;gap:12px;align-content:start}
+.pj .top-row{display:flex;justify-content:space-between;align-items:center;gap:12px}
+.pj .chip{font-size:13px;font-weight:600;padding:5px 12px;border-radius:999px;background:var(--sky);color:var(--sky-ink)}
+.pj h3{font:400 28px/1.15 var(--serif);color:var(--ink)}
+.pj p{color:var(--muted)}
+.pj .out{font-weight:700;color:var(--teal)}
+@media (max-width:760px){.projects{grid-template-columns:1fr}}
+
+/* Education */
+.edu{display:grid;grid-template-columns:repeat(4,1fr);gap:22px}
+.ed{background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:26px;display:grid;gap:10px;align-content:start}
+.ed .yr{font:400 40px/1 var(--serif);color:var(--teal)}
+.ed h3{font:700 17px/1.35 var(--sans);color:var(--ink)}
+.ed p{color:var(--muted);font-size:15px}
+.ed .kind{font-size:12px;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:var(--muted)}
+@media (max-width:1000px){.edu{grid-template-columns:repeat(2,1fr)}}
+@media (max-width:520px){.edu{grid-template-columns:1fr}}
+
+/* Contact */
+.contact{background:var(--ink);color:#fff;border-radius:22px;padding:64px clamp(24px,5vw,64px);display:grid;grid-template-columns:1.1fr 1fr;gap:44px}
+.contact .eyebrow{color:#7FD1BF}
+.contact h2{font:400 clamp(42px,5.5vw,64px)/1 var(--serif);margin-top:16px}
+.contact p{color:#C6D6D2;margin-top:18px;max-width:44ch;font-size:17px}
+.lines{display:grid;gap:12px;align-content:center}
+.line{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:16px 18px;border:1px solid rgba(255,255,255,.18);border-radius:12px}
+.line>div{min-width:0}
+.line .k{display:block;font-size:12px;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:#7FD1BF;margin-bottom:6px}
+.line .v{font-weight:600;overflow-wrap:anywhere;user-select:all;text-decoration:none}
+.copy{flex:none;font:600 13px/1 var(--sans);padding:9px 12px;border-radius:8px;border:1px solid rgba(255,255,255,.3);background:transparent;color:#fff;cursor:pointer}
+.copy:hover{background:rgba(255,255,255,.1)}
+@media (max-width:860px){.contact{grid-template-columns:1fr}}
+footer{padding-block:36px 44px;color:var(--muted);font-size:14px}
+footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px}
+footer .name{font-size:24px}
+body{margin:0}img{max-width:100%}[hidden]{display:none!important}
+</style>
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<meta property="og:title" content="Oluwatobi Olaopa | Growth, Performance Marketing &amp; Analytics">
+<meta property="og:description" content="Founder of Revynex. Growth strategist, performance marketer and marketing analyst with 6+ years across SaaS, EdTech and eCommerce.">
+<meta property="og:type" content="website">
+</head>
+<body>
+
+
+<header class="top">
+  <div class="wrap">
+    <a class="name" href="#top">Oluwatobi Olaopa<i>.</i></a>
+    <ul class="menu">
+      <li><a href="#about">About</a></li>
+      <li><a href="#expertise">Expertise</a></li>
+      <li><a href="#toolkit">Toolkit</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#results">Results</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <button class="burger" id="burger" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="drawer">
+      <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+    </button>
+  </div>
+  <nav class="drawer" id="drawer" hidden>
+    <div class="wrap"><ul>
+      <li><a href="#about">About</a></li><li><a href="#expertise">Expertise</a></li><li><a href="#toolkit">Toolkit</a></li><li><a href="#experience">Experience</a></li>
+      <li><a href="#results">Results</a></li><li><a href="#projects">Projects</a></li><li><a href="#education">Education</a></li><li><a href="#contact">Contact</a></li>
+    </ul></div>
+  </nav>
+</header>
+
+<main id="top">
+  <section class="hero">
+    <div class="wrap">
+      <div>
+        <p class="eyebrow">Founder, Revynex · Growth &amp; Performance Marketing · Sheffield, UK</p>
+        <h1>Growth built on <em>data, media and strategy.</em></h1>
+        <p class="lede">I'm a growth strategist, performance marketer, digital marketing specialist and marketing analyst with 6+ years across SaaS, EdTech and eCommerce. I plan the strategy, run the campaigns and measure what they return. Today I'm building Revynex, an AI revenue analyst for SaaS teams.</p>
+        <div class="ctas">
+          <a class="btn" href="#contact">Work with me</a>
+          <a class="btn ghost" href="https://www.linkedin.com/in/oluwatobi-olaopa/" target="_blank" rel="noopener">LinkedIn ↗</a>
+        </div>
+      </div>
+      <aside class="profile" aria-label="Profile summary">
+        <div style="display:flex;align-items:center;gap:14px"><span class="avatar">OO</span><span class="status">Open to new roles</span></div>
+        <dl>
+          <div><dt>Current</dt><dd>Founder, Revynex</dd></div>
+          <div><dt>Experience</dt><dd>6+ years</dd></div>
+          <div><dt>Sectors</dt><dd>SaaS · EdTech · eCommerce</dd></div>
+          <div><dt>Channels</dt><dd>Google · Meta · LinkedIn · SEO</dd></div>
+          <div><dt>Core stack</dt><dd>SQL · Python · GA4 · Power BI</dd></div>
+          <div><dt>Location</dt><dd>Sheffield, England</dd></div>
+        </dl>
+      </aside>
+    </div>
+  </section>
+
+  <div class="wrap">
+    <ul class="specs" aria-label="Specialisms">
+      <li>Growth Strategy</li><li>Performance Marketing</li><li>Digital Marketing</li>
+      <li>Go-to-Market &amp; Positioning</li><li>Marketing Analytics</li><li>Attribution Modelling</li>
+      <li>Funnel &amp; CRO</li><li>SEO &amp; Organic Growth</li><li>Lifecycle Marketing</li><li>Predictive Analytics</li>
+    </ul>
+
+    <div class="stats" aria-label="Headline results">
+      <div class="stat s1"><span class="lab">01 / Paid acquisition efficiency</span><b>−70%</b><p>Cost per lead, cut from £6.0 to £1.8</p></div>
+      <div class="stat s2"><span class="lab">02 / Retention analytics</span><b>+35%</b><p>User retention from cohort and funnel analysis</p></div>
+      <div class="stat s3"><span class="lab">03 / Reporting automation</span><b>30%</b><p>Less time spent on reporting with automated dashboards</p></div>
+      <div class="stat s4"><span class="lab">04 / Organic growth</span><b>+50%</b><p>Organic search traffic in six months</p></div>
+    </div>
+  </div>
+
+  <section class="sec" id="expertise" style="padding-top:0">
+    <div class="wrap">
+      <div class="shead"><p class="eyebrow">What I do</p><h2>Four roles, one goal: profitable growth.</h2><p>I've held each of these titles, and the work is strongest when they meet in one person.</p></div>
+      <div class="roles">
+        <article class="role" style="--rc:#13806E"><span class="ri"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 17l6-6 4 4 8-8"/><path d="M15 7h6v6"/></svg></span><h3>Growth Strategist</h3><p>Positioning, go-to-market, pricing and funnel strategy, from first users to retained customers.</p><ul><li>GTM</li><li>Positioning</li><li>Retention</li><li>Experimentation</li></ul></article>
+        <article class="role" style="--rc:#C0245C"><span class="ri"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="5"/><circle cx="12" cy="12" r="1"/></svg></span><h3>Performance Marketing</h3><p>Paid search and social run against CPL, CAC and ROI, with continuous testing and budget reallocation.</p><ul><li>Google Ads</li><li>Meta</li><li>LinkedIn</li><li>TikTok</li></ul></article>
+        <article class="role" style="--rc:#B4621A"><span class="ri"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4" width="18" height="14" rx="2"/><path d="M3 9h18M8 21h8M12 18v3"/></svg></span><h3>Digital Marketing Specialist</h3><p>Multi-channel execution across SEO, email, content, social and website management.</p><ul><li>SEO</li><li>Email</li><li>Content</li><li>WordPress</li></ul></article>
+        <article class="role" style="--rc:#2C46B5"><span class="ri"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 20V10M10 20V4M16 20v-7M22 20H2"/></svg></span><h3>Marketing Analyst</h3><p>Attribution, segmentation, churn and LTV models, and the dashboards that make them usable.</p><ul><li>SQL</li><li>Python</li><li>GA4</li><li>Power BI</li></ul></article>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec band" id="about">
+    <div class="wrap">
+      <div class="shead"><p class="eyebrow">About me</p><h2>Marketer, analyst, founder.</h2></div>
+      <div class="about">
+        <div class="acopy">
+          <p>I started out running paid search, SEO and email for an eCommerce bakery, where every pound of ad spend had to show up in revenue. That habit of tying activity to commercial outcomes has followed me into every role since.</p>
+          <p>At <strong>IDP Education</strong> I managed international lead-generation campaigns and the reporting behind them. At <strong>HigherAd</strong> I moved fully into analytics: multi-touch attribution in SQL, churn prediction with Python and Scikit-Learn, and executive dashboards in Tableau. Data science training with <strong>10Alytics</strong> and growth analytics for <strong>CampusHut</strong> rounded that out.</p>
+          <p>In 2026 I founded <strong>Revynex</strong>, an AI analyst that tells SaaS founders what changed in their revenue, why, and what to do next. It brings together what I've learned about growth, measurement and the gap between data and decisions.</p>
+        </div>
+        <div class="pillars">
+          <div class="pillar"><h3>Measure what matters</h3><p>KPI frameworks for CAC, LTV, churn, ROI and funnel conversion.</p></div>
+          <div class="pillar"><h3>Model what's next</h3><p>Churn, LTV and campaign forecasts that guide budget and retention.</p></div>
+          <div class="pillar"><h3>Make it usable</h3><p>Dashboards and data stories built for the people who make the call.</p></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec" id="toolkit" style="background:var(--band);padding-top:0">
+    <div class="wrap">
+      <div class="shead"><p class="eyebrow">My toolkit</p><h2>The tools I use every day.</h2><p>Grouped by the job they do, from raw data through to the campaign.</p></div>
+      <div class="tgrid">
+<article class="tgroup" style="--c:#5E7A16"><div class="thead"><span class="ticon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 2 2 7l10 5 10-5-10-5Z"/><path d="m2 12 10 5 10-5"/><path d="m2 17 10 5 10-5"/></svg></span><span class="tcount">6 tools</span></div><h3>Data &amp; Programming</h3><p>Querying, cleaning and shaping raw data.</p><ul class="tools"><li class="tool"><span class="logo" style="background:#FFFFFF"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="#4169E1" d="M23.5594 14.7228a.5269.5269 0 0 0-.0563-.1191c-.139-.2632-.4768-.3418-1.0074-.2321-1.6533.3411-2.2935.1312-2.5256-.0191 1.342-2.0482 2.445-4.522 3.0411-6.8297.2714-1.0507.7982-3.5237.1222-4.7316a1.5641 1.5641 0 0 0-.1509-.235C21.6931.9086 19.8007.0248 17.5099.0005c-1.4947-.0158-2.7705.3461-3.1161.4794a9.449 9.449 0 0 0-.5159-.0816 8.044 8.044 0 0 0-1.3114-.1278c-1.1822-.0184-2.2038.2642-3.0498.8406-.8573-.3211-4.7888-1.645-7.2219.0788C.9359 2.1526.3086 3.8733.4302 6.3043c.0409.818.5069 3.334 1.2423 5.7436.4598 1.5065.9387 2.7019 1.4334 3.582.553.9942 1.1259 1.5933 1.7143 1.7895.4474.1491 1.1327.1441 1.8581-.7279.8012-.9635 1.5903-1.8258 1.9446-2.2069.4351.2355.9064.3625 1.39.3772a.0569.0569 0 0 0 .0004.0041 11.0312 11.0312 0 0 0-.2472.3054c-.3389.4302-.4094.5197-1.5002.7443-.3102.064-1.1344.2339-1.1464.8115-.0025.1224.0329.2309.0919.3268.2269.4231.9216.6097 1.015.6331 1.3345.3335 2.5044.092 3.3714-.6787-.017 2.231.0775 4.4174.3454 5.0874.2212.5529.7618 1.9045 2.4692 1.9043.2505 0 .5263-.0291.8296-.0941 1.7819-.3821 2.5557-1.1696 2.855-2.9059.1503-.8707.4016-2.8753.5388-4.1012.0169-.0703.0357-.1207.057-.1362.0007-.0005.0697-.0471.4272.0307a.3673.3673 0 0 0 .0443.0068l.2539.0223.0149.001c.8468.0384 1.9114-.1426 2.5312-.4308.6438-.2988 1.8057-1.0323 1.5951-1.6698zM2.371 11.8765c-.7435-2.4358-1.1779-4.8851-1.2123-5.5719-.1086-2.1714.4171-3.6829 1.5623-4.4927 1.8367-1.2986 4.8398-.5408 6.108-.13-.0032.0032-.0066.0061-.0098.0094-2.0238 2.044-1.9758 5.536-1.9708 5.7495-.0002.0823.0066.1989.0162.3593.0348.5873.0996 1.6804-.0735 2.9184-.1609 1.1504.1937 2.2764.9728 3.0892.0806.0841.1648.1631.2518.2374-.3468.3714-1.1004 1.1926-1.9025 2.1576-.5677.6825-.9597.5517-1.0886.5087-.3919-.1307-.813-.5871-1.2381-1.3223-.4796-.839-.9635-2.0317-1.4155-3.5126zm6.0072 5.0871c-.1711-.0428-.3271-.1132-.4322-.1772.0889-.0394.2374-.0902.4833-.1409 1.2833-.2641 1.4815-.4506 1.9143-1.0002.0992-.126.2116-.2687.3673-.4426a.3549.3549 0 0 0 .0737-.1298c.1708-.1513.2724-.1099.4369-.0417.156.0646.3078.26.3695.4752.0291.1016.0619.2945-.0452.4444-.9043 1.2658-2.2216 1.2494-3.1676 1.0128zm2.094-3.988-.0525.141c-.133.3566-.2567.6881-.3334 1.003-.6674-.0021-1.3168-.2872-1.8105-.8024-.6279-.6551-.9131-1.5664-.7825-2.5004.1828-1.3079.1153-2.4468.079-3.0586-.005-.0857-.0095-.1607-.0122-.2199.2957-.2621 1.6659-.9962 2.6429-.7724.4459.1022.7176.4057.8305.928.5846 2.7038.0774 3.8307-.3302 4.7363-.084.1866-.1633.3629-.2311.5454zm7.3637 4.5725c-.0169.1768-.0358.376-.0618.5959l-.146.4383a.3547.3547 0 0 0-.0182.1077c-.0059.4747-.054.6489-.115.8693-.0634.2292-.1353.4891-.1794 1.0575-.11 1.4143-.8782 2.2267-2.4172 2.5565-1.5155.3251-1.7843-.4968-2.0212-1.2217a6.5824 6.5824 0 0 0-.0769-.2266c-.2154-.5858-.1911-1.4119-.1574-2.5551.0165-.5612-.0249-1.9013-.3302-2.6462.0044-.2932.0106-.5909.019-.8918a.3529.3529 0 0 0-.0153-.1126 1.4927 1.4927 0 0 0-.0439-.208c-.1226-.4283-.4213-.7866-.7797-.9351-.1424-.059-.4038-.1672-.7178-.0869.067-.276.1831-.5875.309-.9249l.0529-.142c.0595-.16.134-.3257.213-.5012.4265-.9476 1.0106-2.2453.3766-5.1772-.2374-1.0981-1.0304-1.6343-2.2324-1.5098-.7207.0746-1.3799.3654-1.7088.5321a5.6716 5.6716 0 0 0-.1958.1041c.0918-1.1064.4386-3.1741 1.7357-4.4823a4.0306 4.0306 0 0 1 .3033-.276.3532.3532 0 0 0 .1447-.0644c.7524-.5706 1.6945-.8506 2.802-.8325.4091.0067.8017.0339 1.1742.081 1.939.3544 3.2439 1.4468 4.0359 2.3827.8143.9623 1.2552 1.9315 1.4312 2.4543-1.3232-.1346-2.2234.1268-2.6797.779-.9926 1.4189.543 4.1729 1.2811 5.4964.1353.2426.2522.4522.2889.5413.2403.5825.5515.9713.7787 1.2552.0696.087.1372.1714.1885.245-.4008.1155-1.1208.3825-1.0552 1.717-.0123.1563-.0423.4469-.0834.8148-.0461.2077-.0702.4603-.0994.7662zm.8905-1.6211c-.0405-.8316.2691-.9185.5967-1.0105a2.8566 2.8566 0 0 0 .135-.0406 1.202 1.202 0 0 0 .1342.103c.5703.3765 1.5823.4213 3.0068.1344-.2016.1769-.5189.3994-.9533.6011-.4098.1903-1.0957.333-1.7473.3636-.7197.0336-1.0859-.0807-1.1721-.151zm.5695-9.2712c-.0059.3508-.0542.6692-.1054 1.0017-.055.3576-.112.7274-.1264 1.1762-.0142.4368.0404.8909.0932 1.3301.1066.887.216 1.8003-.2075 2.7014a3.5272 3.5272 0 0 1-.1876-.3856c-.0527-.1276-.1669-.3326-.3251-.6162-.6156-1.1041-2.0574-3.6896-1.3193-4.7446.3795-.5427 1.3408-.5661 2.1781-.463zm.2284 7.0137a12.3762 12.3762 0 0 0-.0853-.1074l-.0355-.0444c.7262-1.1995.5842-2.3862.4578-3.4385-.0519-.4318-.1009-.8396-.0885-1.2226.0129-.4061.0666-.7543.1185-1.0911.0639-.415.1288-.8443.1109-1.3505.0134-.0531.0188-.1158.0118-.1902-.0457-.4855-.5999-1.938-1.7294-3.253-.6076-.7073-1.4896-1.4972-2.6889-2.0395.5251-.1066 1.2328-.2035 2.0244-.1859 2.0515.0456 3.6746.8135 4.8242 2.2824a.908.908 0 0 1 .0667.1002c.7231 1.3556-.2762 6.2751-2.9867 10.5405zm-8.8166-6.1162c-.025.1794-.3089.4225-.6211.4225a.5821.5821 0 0 1-.0809-.0056c-.1873-.026-.3765-.144-.5059-.3156-.0458-.0605-.1203-.178-.1055-.2844.0055-.0401.0261-.0985.0925-.1488.1182-.0894.3518-.1226.6096-.0867.3163.0441.6426.1938.6113.4186zm7.9305-.4114c.0111.0792-.049.201-.1531.3102-.0683.0717-.212.1961-.4079.2232a.5456.5456 0 0 1-.075.0052c-.2935 0-.5414-.2344-.5607-.3717-.024-.1765.2641-.3106.5611-.352.297-.0414.6111.0088.6356.1851z"/></svg></span>SQL / PostgreSQL</li><li class="tool"><span class="logo" style="background:#FFFFFF"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="#669DF6" d="M5.676 10.595h2.052v5.244a5.892 5.892 0 0 1-2.052-2.088v-3.156zm18.179 10.836a.504.504 0 0 1 0 .708l-1.716 1.716a.504.504 0 0 1-.708 0l-4.248-4.248a.206.206 0 0 1-.007-.007c-.02-.02-.028-.045-.043-.066a10.736 10.736 0 0 1-6.334 2.065C4.835 21.599 0 16.764 0 10.799S4.835 0 10.8 0s10.799 4.835 10.799 10.8c0 2.369-.772 4.553-2.066 6.333.025.017.052.028.074.05l4.248 4.248zm-5.028-10.632a8.015 8.015 0 1 0-8.028 8.028h.024a8.016 8.016 0 0 0 8.004-8.028zm-4.86 4.98a6.002 6.002 0 0 0 2.04-2.184v-1.764h-2.04v3.948zm-4.5.948c.442.057.887.08 1.332.072.4.025.8.025 1.2 0V7.692H9.468v9.035z"/></svg></span>BigQuery</li><li class="tool"><span class="logo" style="background:#FFFFFF"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="#3776AB" d="M14.25.18l.9.2.73.26.59.3.45.32.34.34.25.34.16.33.1.3.04.26.02.2-.01.13V8.5l-.05.63-.13.55-.21.46-.26.38-.3.31-.33.25-.35.19-.35.14-.33.1-.3.07-.26.04-.21.02H8.77l-.69.05-.59.14-.5.22-.41.27-.33.32-.27.35-.2.36-.15.37-.1.35-.07.32-.04.27-.02.21v3.06H3.17l-.21-.03-.28-.07-.32-.12-.35-.18-.36-.26-.36-.36-.35-.46-.32-.59-.28-.73-.21-.88-.14-1.05-.05-1.23.06-1.22.16-1.04.24-.87.32-.71.36-.57.4-.44.42-.33.42-.24.4-.16.36-.1.32-.05.24-.01h.16l.06.01h8.16v-.83H6.18l-.01-2.75-.02-.37.05-.34.11-.31.17-.28.25-.26.31-.23.38-.2.44-.18.51-.15.58-.12.64-.1.71-.06.77-.04.84-.02 1.27.05zm-6.3 1.98l-.23.33-.08.41.08.41.23.34.33.22.41.09.41-.09.33-.22.23-.34.08-.41-.08-.41-.23-.33-.33-.22-.41-.09-.41.09zm13.09 3.95l.28.06.32.12.35.18.36.27.36.35.35.47.32.59.28.73.21.88.14 1.04.05 1.23-.06 1.23-.16 1.04-.24.86-.32.71-.36.57-.4.45-.42.33-.42.24-.4.16-.36.09-.32.05-.24.02-.16-.01h-8.22v.82h5.84l.01 2.76.02.36-.05.34-.11.31-.17.29-.25.25-.31.24-.38.2-.44.17-.51.15-.58.13-.64.09-.71.07-.77.04-.84.01-1.27-.04-1.07-.14-.9-.2-.73-.25-.59-.3-.45-.33-.34-.34-.25-.34-.16-.33-.1-.3-.04-.25-.02-.2.01-.13v-5.34l.05-.64.13-.54.21-.46.26-.38.3-.32.33-.24.35-.2.35-.14.33-.1.3-.06.26-.04.21-.02.13-.01h5.84l.69-.05.59-.14.5-.21.41-.28.33-.32.27-.35.2-.36.15-.36.1-.35.07-.32.04-.28.02-.21V6.07h2.09l.14.01zm-6.47 14.25l-.23.33-.08.41.08.41.23.33.33.23.41.08.41-.08.33-.23.23-.33.08-.41-.08-.41-.23-.33-.33-.23-.41-.08-.41.08z"/></svg></span>Python</li><li class="tool"><span class="logo" style="background:#FFFFFF"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="#150458" d="M16.922 0h2.623v18.104h-2.623zm-4.126 12.94h2.623v2.57h-2.623zm0-7.037h2.623v5.446h-2.623zm0 11.197h2.623v5.446h-2.623zM4.456 5.896h2.622V24H4.455zm4.213 2.559h2.623v2.57H8.67zm0 4.151h2.623v5.447H8.67zm0-11.187h2.623v5.446H8.67Z"/></svg></span>Pandas</li><li class="tool"><span class="logo" style="background:#FFFFFF"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="#013243" d="M10.315 4.876L6.3048 2.8517l-4.401 2.1965 4.1186 2.0683zm1.8381.9277l4.2045 2.1223-4.3622 2.1906-4.125-2.0718zm5.6153-2.9213l4.3193 2.1658-3.863 1.9402-4.2131-2.1252zm-1.859-.9329L12.021 0 8.1742 1.9193l4.0068 2.0208zm-3.0401 16.7443V24l4.7107-2.3507-.0053-5.3085zm4.7037-4.2057l-.0052-5.2528-4.6985 2.3356v5.2546zm5.6553-.9845v5.327l-4.0178 2.0052-.0029-5.3028zm0-1.8626V6.4214l-4.0253 2.001.0034 5.2633zM11.2062 11.571L8.0333 9.9756v6.895s-3.8804-8.2564-4.2399-8.998c-.0463-.0957-.2371-.2007-.2858-.2262C2.8118 7.2812.773 6.2485.773 6.2485V18.43l2.8204 1.5076v-6.3674s3.8392 7.3775 3.878 7.458c.0389.0807.4245.8582.8362 1.1314.5485.363 2.8992 1.7766 2.8992 1.7766z"/></svg></span>NumPy</li><li class="tool"><span class="logo" style="background:#FFFFFF"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="#217346" d="M23 1.5q.41 0 .7.3.3.29.3.7v19q0 .41-.3.7-.29.3-.7.3H7q-.41 0-.7-.3-.3-.29-.3-.7V18H1q-.41 0-.7-.3-.3-.29-.3-.7V7q0-.41.3-.7Q.58 6 1 6h5V2.5q0-.41.3-.7.29-.3.7-.3zM6 13.28l1.42 2.66h2.14l-2.38-3.87 2.34-3.8H7.46l-1.3 2.4-.05.08-.04.09-.64-1.28-.66-1.29H2.59l2.27 3.82-2.48 3.85h2.16zM14.25 21v-3H7.5v3zm0-4.5v-3.75H12v3.75zm0-5.25V7.5H12v3.75zm0-5.25V3H7.5v3zm8.25 15v-3h-6.75v3zm0-4.5v-3.75h-6.75v3.75zm0-5.25V7.5h-6.75v3.75zm0-5.25V3h-6.75v3Z"/></svg></span>Excel</li></ul></article>
+<article class="tgroup" style="--c:#1F6F8B"><div class="thead"><span class="ticon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 2 2 7l10 5 10-5-10-5Z"/><path d="m2 12 10 5 10-5"/><path d="m2 17 10 5 10-5"/></svg></span><span class="tcount">6 tools</span></div><h3>Visualisation &amp; BI</h3><p>Dashboards stakeholders actually open.</p><ul class="tools"><li class="tool"><span class="logo" style="background:#16211F"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="#F2C811" d="M10 12a1 1 0 0 1 1 1v11H4a1 1 0 0 1-1-1V13a1 1 0 0 1 1-1h6Zm-2-.5V7a1 1 0 0 1 1-1h6a1 1 0 0 1 1 1v17h-4.5V13a1.5 1.5 0 0 0-1.5-1.5H8Zm5-6V1a1 1 0 0 1 1-1h6a1 1 0 0 1 1 1v22a1 1 0 0 1-1 1h-3.5V7A1.5 1.5 0 0 0 15 5.5h-2Z"/></svg></span>Power BI</li><li class="tool"><span class="logo" style="background:#FFFFFF"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="#E97627" d="M11.654.174V2.377H9.682v.58h1.972V5.16h.696V2.957h1.97v-.58h-1.97V.174h-.348zm6.03 2.262l-.002 1.623v1.623h-2.957v.927h2.957v3.188H18.725l.011-1.582.02-1.576 1.465-.02 1.46-.01v-.927H18.728V2.436h-.522zm-12.407.06V5.686H2.291v.925H5.277V9.801h.985V6.61h3.013v-.925H6.262V2.496H5.77zm6.086 5.27v3.593H8.06v1.188h3.304v3.596h1.28v-3.596H15.953v-1.188H12.643V7.766h-.637zm9.721 1.55v2.221h-2.012v.811h2.012v2.261h.887v-2.261H24v-.811h-2.029V9.317h-.422zm-19.111.131V11.621H0v.621H1.973v2.194H2.64v-2.194h2v-.62H2.609V9.446h-.318zm15.709 4.516v3.254h-3.016v.927h3.016v3.217h1.072v-3.216H21.74v-.928H18.754v-3.254h-.533zm-12.463.008v3.246H2.262v.928h2.957v3.189H6.32v-3.189h2.955v-.928H6.32V13.97h-.55zm6.316 4.578l.002 1.103v1.1H9.566v.812h1.971v2.262h.928l.012-1.119.017-1.143H14.463v-.812h-2V18.549h-.465z"/></svg></span>Tableau</li><li class="tool"><span class="logo" style="background:#FFFFFF"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="#4285F4" d="M11.9475 0c-1.1598.0021-2.0982.944-2.096 2.1038a2.1 2.1 0 00.356 1.166l.895-.8959a.884.884 0 11.565.564l-.895.895c.9593.6478 2.2621.3953 2.91-.564.6478-.9593.3953-2.262-.564-2.91A2.096 2.096 0 0011.9475 0zm-.835 6.1128a3.2629 3.2629 0 00-.653-1.965l-1.164 1.162a1.667 1.667 0 01-.318 2.012l.632 1.5449a3.2819 3.2819 0 001.503-2.754zm-3.2499 1.666h-.03c-.9217.0009-1.6697-.7455-1.6707-1.6673-.001-.9217.7454-1.6697 1.6672-1.6707a1.669 1.669 0 01.9195.275l1.152-1.152c-1.4069-1.141-3.4724-.9257-4.6135.4811s-.9257 3.4723.481 4.6135a3.2799 3.2799 0 002.7275.6652l-.633-1.5439v-.001zm4.1279 1.3359c-.728 0-1.452.106-2.15.315l.922 2.2519c2.6872-.6819 5.4184.9438 6.1002 3.631.6818 2.6873-.9439 5.4184-3.6311 6.1002s-5.4184-.9439-6.1002-3.631c-.5682-2.2394.4655-4.5774 2.5041-5.6643l-.91-2.2449c-3.6908 1.808-5.2173 6.2657-3.4093 9.9567l.0005.001c1.808 3.6909 6.2657 5.2173 9.9567 3.4093l.001-.0005c3.6913-1.8071 5.2187-6.2645 3.4116-9.9558a7.4417 7.4417 0 00-6.6865-4.1696h-.008l-.001.001z"/></svg></span>Looker Studio</li><li class="tool"><span class="logo" style="background:#FFFFFF"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="#34A853" d="M11.318 12.545H7.91v-1.909h3.41v1.91zM14.728 0v6h6l-6-6zm1.363 10.636h-3.41v1.91h3.41v-1.91zm0 3.273h-3.41v1.91h3.41v-1.91zM20.727 6.5v15.864c0 .904-.732 1.636-1.636 1.636H4.909a1.636 1.636 0 0 1-1.636-1.636V1.636C3.273.732 4.005 0 4.909 0h9.318v6.5h6.5zm-3.273 2.773H6.545v7.909h10.91v-7.91zm-6.136 4.636H7.91v1.91h3.41v-1.91z"/></svg></span>Google Sheets</li><li class="tool"><span class="logo mono" style="background:#11557C">Mpl</span>Matplotlib</li><li class="tool"><span class="logo mono" style="background:#4C72B0">Sns</span>Seaborn</li></ul></article>
+<article class="tgroup" style="--c:#2C46B5"><div class="thead"><span class="ticon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 2 2 7l10 5 10-5-10-5Z"/><path d="m2 12 10 5 10-5"/><path d="m2 17 10 5 10-5"/></svg></span><span class="tcount">4 tools</span></div><h3>Machine Learning &amp; Modelling</h3><p>Churn, LTV and campaign forecasting.</p><ul class="tools"><li class="tool"><span class="logo" style="background:#FFFFFF"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="#F7931E" d="M15.601 5.53c-1.91.035-3.981.91-5.63 2.56-2.93 2.93-2.083 8.53-1.088 9.525.805.804 6.595 1.843 9.526-1.088a9.74 9.74 0 0 0 .584-.643c.043-.292.205-.66.489-1.106a1.848 1.848 0 0 1-.537.176c-.144.265-.37.55-.676.855-.354.335-.607.554-.76.656a.795.795 0 0 1-.437.152c-.35 0-.514-.308-.494-.924-.22.316-.425.549-.612.7a.914.914 0 0 1-.578.224c-.194 0-.36-.09-.496-.273a1.03 1.03 0 0 1-.193-.507 4.016 4.016 0 0 1-.726.583c-.224.132-.47.197-.74.197-.3 0-.543-.096-.727-.288a.978.978 0 0 1-.257-.524v.004c-.3.276-.564.48-.79.611a1.295 1.295 0 0 1-.649.197.693.693 0 0 1-.571-.275c-.145-.183-.218-.43-.218-.739 0-.464.101-1.02.302-1.67.201-.65.445-1.25.733-1.797l.842-.312a.21.21 0 0 1 .06-.013c.063 0 .116.047.157.14.04.095.061.221.061.38 0 .451-.104.888-.312 1.31-.207.422-.532.873-.974 1.352-.018.23-.027.388-.027.474 0 .193.036.345.106.458.071.113.165.169.282.169a.71.71 0 0 0 .382-.13c.132-.084.333-.26.602-.523.028-.418.187-.798.482-1.142.324-.38.685-.569 1.08-.569.206 0 .37.054.494.16a.524.524 0 0 1 .186.417c0 .458-.486.829-1.459 1.114.088.43.32.646.693.646a.807.807 0 0 0 .417-.117c.129-.076.321-.243.575-.497.032-.252.118-.495.259-.728.182-.3.416-.544.701-.73.285-.185.537-.278.756-.278.276 0 .47.127.58.381l.677-.374h.186l-.292.971c-.15.488-.226.823-.226 1.004 0 .19.067.285.202.285.086 0 .181-.045.285-.137.104-.092.25-.232.437-.42v.001c.143-.155.274-.32.392-.494-.19-.084-.285-.21-.285-.375 0-.17.058-.352.174-.545.116-.194.275-.29.479-.29.172 0 .258.088.258.265 0 .139-.05.338-.149.596.367-.04.687-.32.961-.842l.228-.01c1.059-2.438.828-5.075-.83-6.732-1.019-1.02-2.408-1.5-3.895-1.471zm4.725 8.203a8.938 8.938 0 0 1-1.333 2.151 1.09 1.09 0 0 0-.012.147c0 .168.047.309.14.423.092.113.206.17.34.17.296 0 .714-.264 1.254-.787-.001.04-.003.08-.003.121 0 .146.012.368.036.666l.733-.172c0-.2.003-.357.01-.474.01-.157.033-.33.066-.517.02-.11.07-.216.152-.315l.186-.216a5.276 5.276 0 0 1 .378-.397c.062-.055.116-.099.162-.13a.26.26 0 0 1 .123-.046c.055 0 .083.035.083.106 0 .07-.052.236-.156.497-.194.486-.292.848-.292 1.084 0 .175.046.314.136.418a.45.45 0 0 0 .358.155c.365 0 .803-.269 1.313-.808v-.381c-.361.426-.623.64-.784.64-.109 0-.163-.067-.163-.2 0-.1.065-.316.195-.65.19-.486.285-.836.285-1.048a.464.464 0 0 0-.112-.319.36.36 0 0 0-.282-.127c-.165 0-.354.077-.567.233-.213.156-.5.436-.863.84.053-.262.165-.622.335-1.08l-.809.156a6.54 6.54 0 0 0-.399 1.074c-.04.156-.07.316-.092.48a7.447 7.447 0 0 1-.49.45.38.38 0 0 1-.229.08.208.208 0 0 1-.174-.082.352.352 0 0 1-.064-.222c0-.1.019-.214.056-.343.038-.13.12-.373.249-.731l.308-.849zm-17.21-2.927c-.863-.016-1.67.263-2.261.854-1.352 1.352-1.07 3.827.631 5.527 1.7 1.701 4.95 1.21 5.527.632.467-.466 1.07-3.827-.631-5.527-.957-.957-2.158-1.465-3.267-1.486zm12.285.358h.166v.21H15.4zm.427 0h.166v.865l.46-.455h.195l-.364.362.428.684h-.198l-.357-.575-.164.166v.41h-.166zm1.016 0h.166v.21h-.166zm.481.122h.166v.288h.172v.135h-.172v.717c0 .037.006.062.02.075.012.013.037.02.074.02a.23.23 0 0 0 .078-.01v.141a.802.802 0 0 1-.136.014.23.23 0 0 1-.15-.043.15.15 0 0 1-.052-.123v-.79h-.141v-.136h.141zm-3.562.258c.081 0 .15.012.207.038.057.024.1.061.13.11s.045.106.045.173h-.176c-.006-.111-.075-.167-.208-.167a.285.285 0 0 0-.164.041.134.134 0 0 0-.06.117c0 .035.015.065.045.088.03.024.08.044.15.06l.16.039a.47.47 0 0 1 .224.105c.047.046.07.108.07.186a.3.3 0 0 1-.052.175.327.327 0 0 1-.152.116.585.585 0 0 1-.226.041c-.136 0-.24-.03-.309-.088-.069-.059-.105-.149-.109-.269h.176c.004.037.01.065.017.084a.166.166 0 0 0 .034.054c.044.043.112.065.204.065a.31.31 0 0 0 .177-.045.139.139 0 0 0 .067-.119.116.116 0 0 0-.038-.09.287.287 0 0 0-.124-.055l-.156-.038a1.248 1.248 0 0 1-.159-.05.359.359 0 0 1-.098-.061.22.22 0 0 1-.058-.083.32.32 0 0 1-.016-.108c0-.096.036-.174.109-.232a.45.45 0 0 1 .29-.087zm1.035 0a.46.46 0 0 1 .202.043.351.351 0 0 1 .187.212.577.577 0 0 1 .023.126h-.168a.256.256 0 0 0-.078-.168.242.242 0 0 0-.17-.06.248.248 0 0 0-.155.05.306.306 0 0 0-.1.144.662.662 0 0 0-.034.224.58.58 0 0 0 .035.214.299.299 0 0 0 .101.135.261.261 0 0 0 .157.048c.142 0 .227-.084.256-.252h.167a.519.519 0 0 1-.065.22.35.35 0 0 1-.146.138.464.464 0 0 1-.216.048.448.448 0 0 1-.246-.066.441.441 0 0 1-.161-.192.703.703 0 0 1-.057-.293c0-.085.01-.163.032-.233a.522.522 0 0 1 .095-.182.403.403 0 0 1 .15-.117.453.453 0 0 1 .191-.04zm.603.03h.166v1.046H15.4zm1.443 0h.166v1.046h-.166zm-5.05.618c-.08 0-.2.204-.356.611-.155.407-.308.977-.459 1.71.281-.312.509-.662.683-1.05.175-.387.262-.72.262-.999a.455.455 0 0 0-.036-.197c-.025-.05-.056-.075-.093-.075zm4.662 1.797c-.221 0-.431.188-.629.563-.197.376-.296.722-.296 1.038 0 .12.029.216.088.29a.273.273 0 0 0 .223.111c.221 0 .43-.188.625-.565.196-.377.294-.725.294-1.043a.457.457 0 0 0-.083-.29.269.269 0 0 0-.222-.104zm-2.848.007c-.146 0-.285.11-.417.333-.133.222-.2.51-.2.866.566-.159.849-.452.849-.881 0-.212-.077-.318-.232-.318Z"/></svg></span>Scikit-learn</li><li class="tool"><span class="logo" style="background:#FFFFFF"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="#FF6F00" d="M1.292 5.856L11.54 0v24l-4.095-2.378V7.603l-6.168 3.564.015-5.31zm21.43 5.311l-.014-5.31L12.46 0v24l4.095-2.378V14.87l3.092 1.788-.018-4.618-3.074-1.756V7.603l6.168 3.564z"/></svg></span>TensorFlow</li><li class="tool"><span class="logo" style="background:#FFFFFF"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="#EE4C2C" d="M12.005 0L4.952 7.053a9.865 9.865 0 000 14.022 9.866 9.866 0 0014.022 0c3.984-3.9 3.986-10.205.085-14.023l-1.744 1.743c2.904 2.905 2.904 7.634 0 10.538s-7.634 2.904-10.538 0-2.904-7.634 0-10.538l4.647-4.646.582-.665zm3.568 3.899a1.327 1.327 0 00-1.327 1.327 1.327 1.327 0 001.327 1.328A1.327 1.327 0 0016.9 5.226 1.327 1.327 0 0015.573 3.9z"/></svg></span>PyTorch</li><li class="tool"><span class="logo mono" style="background:#E16737">M</span>MATLAB</li></ul></article>
+<article class="tgroup" style="--c:#B1265C"><div class="thead"><span class="ticon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 2 2 7l10 5 10-5-10-5Z"/><path d="m2 12 10 5 10-5"/><path d="m2 17 10 5 10-5"/></svg></span><span class="tcount">3 tools</span></div><h3>Analytics &amp; SEO</h3><p>Tracking, attribution and organic growth.</p><ul class="tools"><li class="tool"><span class="logo" style="background:#FFFFFF"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="#E37400" d="M22.84 2.9982v17.9987c.0086 1.6473-1.3197 2.9897-2.967 2.9984a2.9808 2.9808 0 01-.3677-.0208c-1.528-.226-2.6477-1.5558-2.6105-3.1V3.1204c-.0369-1.5458 1.0856-2.8762 2.6157-3.1 1.6361-.1915 3.1178.9796 3.3093 2.6158.014.1201.0208.241.0202.3619zM4.1326 18.0548c-1.6417 0-2.9726 1.331-2.9726 2.9726C1.16 22.6691 2.4909 24 4.1326 24s2.9726-1.3309 2.9726-2.9726-1.331-2.9726-2.9726-2.9726zm7.8728-9.0098c-.0171 0-.0342 0-.0513.0003-1.6495.0904-2.9293 1.474-2.891 3.1256v7.9846c0 2.167.9535 3.4825 2.3505 3.763 1.6118.3266 3.1832-.7152 3.5098-2.327.04-.1974.06-.3983.0593-.5998v-8.9585c.003-1.6474-1.33-2.9852-2.9773-2.9882z"/></svg></span>Google Analytics 4</li><li class="tool"><span class="logo" style="background:#FFFFFF"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="#0467DF" d="M6.915 4.03c-1.968 0-3.683 1.28-4.871 3.113C.704 9.208 0 11.883 0 14.449c0 .706.07 1.369.21 1.973a6.624 6.624 0 0 0 .265.86 5.297 5.297 0 0 0 .371.761c.696 1.159 1.818 1.927 3.593 1.927 1.497 0 2.633-.671 3.965-2.444.76-1.012 1.144-1.626 2.663-4.32l.756-1.339.186-.325c.061.1.121.196.183.3l2.152 3.595c.724 1.21 1.665 2.556 2.47 3.314 1.046.987 1.992 1.22 3.06 1.22 1.075 0 1.876-.355 2.455-.843a3.743 3.743 0 0 0 .81-.973c.542-.939.861-2.127.861-3.745 0-2.72-.681-5.357-2.084-7.45-1.282-1.912-2.957-2.93-4.716-2.93-1.047 0-2.088.467-3.053 1.308-.652.57-1.257 1.29-1.82 2.05-.69-.875-1.335-1.547-1.958-2.056-1.182-.966-2.315-1.303-3.454-1.303zm10.16 2.053c1.147 0 2.188.758 2.992 1.999 1.132 1.748 1.647 4.195 1.647 6.4 0 1.548-.368 2.9-1.839 2.9-.58 0-1.027-.23-1.664-1.004-.496-.601-1.343-1.878-2.832-4.358l-.617-1.028a44.908 44.908 0 0 0-1.255-1.98c.07-.109.141-.224.211-.327 1.12-1.667 2.118-2.602 3.358-2.602zm-10.201.553c1.265 0 2.058.791 2.675 1.446.307.327.737.871 1.234 1.579l-1.02 1.566c-.757 1.163-1.882 3.017-2.837 4.338-1.191 1.649-1.81 1.817-2.486 1.817-.524 0-1.038-.237-1.383-.794-.263-.426-.464-1.13-.464-2.046 0-2.221.63-4.535 1.66-6.088.454-.687.964-1.226 1.533-1.533a2.264 2.264 0 0 1 1.088-.285z"/></svg></span>Meta Insights</li><li class="tool"><span class="logo" style="background:#FFFFFF"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="#FF642D" d="M20.698 11.911c0 .444-.226.516-.79.516-.596 0-.706-.1-.77-.554-.118-1.152-.896-2.13-2.201-2.24-.418-.034-.518-.19-.518-.706 0-.48.074-.708.446-.708 2.265.01 3.833 1.832 3.833 3.69v.002zm3.3 0c0-3.456-2.338-7.11-7.74-7.11H5.52c-.218 0-.354.11-.354.31 0 .109.082.209.156.26.388.31.97.654 1.73 1.036.743.372 1.323.616 1.903.852.246.1.336.208.336.344 0 .19-.136.308-.4.308H.372c-.254 0-.372.164-.372.326 0 .136.044.254.162.372.69.726 1.796 1.596 3.4 2.604 1.466.91 2.98 1.74 4.533 2.492.236.11.308.236.308.372-.008.154-.126.28-.4.28H4.1c-.216 0-.344.12-.344.3 0 .1.08.226.19.326.888.808 2.311 1.688 4.207 2.494 2.53 1.08 5.094 1.721 7.98 1.721 5.465 0 7.867-4.087 7.867-7.289l-.002.002zm-7.133 5.104c-2.794 0-5.132-2.276-5.132-5.114 0-2.794 2.33-5.04 5.132-5.04 2.863 0 5.111 2.24 5.111 5.04a5.086 5.086 0 0 1-5.111 5.114z"/></svg></span>Semrush</li></ul></article>
+<article class="tgroup" style="--c:#B4621A"><div class="thead"><span class="ticon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 2 2 7l10 5 10-5-10-5Z"/><path d="m2 12 10 5 10-5"/><path d="m2 17 10 5 10-5"/></svg></span><span class="tcount">6 tools</span></div><h3>Paid Media</h3><p>Hands-on campaign management and optimisation.</p><ul class="tools"><li class="tool"><span class="logo" style="background:#FFFFFF"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="#4285F4" d="M3.9998 22.9291C1.7908 22.9291 0 21.1383 0 18.9293s1.7908-3.9998 3.9998-3.9998 3.9998 1.7908 3.9998 3.9998-1.7908 3.9998-3.9998 3.9998zm19.4643-6.0004L15.4632 3.072C14.3586 1.1587 11.9121.5028 9.9988 1.6074S7.4295 5.1585 8.5341 7.0718l8.0009 13.8567c1.1046 1.9133 3.5511 2.5679 5.4644 1.4646 1.9134-1.1046 2.568-3.5511 1.4647-5.4644zM7.5137 4.8438L1.5645 15.1484A4.5 4.5 0 0 1 4 14.4297c2.5597-.0075 4.6248 2.1585 4.4941 4.7148l3.2168-5.5723-3.6094-6.25c-.4499-.7793-.6322-1.6394-.5878-2.4784z"/></svg></span>Google Ads</li><li class="tool"><span class="logo" style="background:#FFFFFF"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="#0467DF" d="M6.915 4.03c-1.968 0-3.683 1.28-4.871 3.113C.704 9.208 0 11.883 0 14.449c0 .706.07 1.369.21 1.973a6.624 6.624 0 0 0 .265.86 5.297 5.297 0 0 0 .371.761c.696 1.159 1.818 1.927 3.593 1.927 1.497 0 2.633-.671 3.965-2.444.76-1.012 1.144-1.626 2.663-4.32l.756-1.339.186-.325c.061.1.121.196.183.3l2.152 3.595c.724 1.21 1.665 2.556 2.47 3.314 1.046.987 1.992 1.22 3.06 1.22 1.075 0 1.876-.355 2.455-.843a3.743 3.743 0 0 0 .81-.973c.542-.939.861-2.127.861-3.745 0-2.72-.681-5.357-2.084-7.45-1.282-1.912-2.957-2.93-4.716-2.93-1.047 0-2.088.467-3.053 1.308-.652.57-1.257 1.29-1.82 2.05-.69-.875-1.335-1.547-1.958-2.056-1.182-.966-2.315-1.303-3.454-1.303zm10.16 2.053c1.147 0 2.188.758 2.992 1.999 1.132 1.748 1.647 4.195 1.647 6.4 0 1.548-.368 2.9-1.839 2.9-.58 0-1.027-.23-1.664-1.004-.496-.601-1.343-1.878-2.832-4.358l-.617-1.028a44.908 44.908 0 0 0-1.255-1.98c.07-.109.141-.224.211-.327 1.12-1.667 2.118-2.602 3.358-2.602zm-10.201.553c1.265 0 2.058.791 2.675 1.446.307.327.737.871 1.234 1.579l-1.02 1.566c-.757 1.163-1.882 3.017-2.837 4.338-1.191 1.649-1.81 1.817-2.486 1.817-.524 0-1.038-.237-1.383-.794-.263-.426-.464-1.13-.464-2.046 0-2.221.63-4.535 1.66-6.088.454-.687.964-1.226 1.533-1.533a2.264 2.264 0 0 1 1.088-.285z"/></svg></span>Meta Ads</li><li class="tool"><span class="logo" style="background:#FFFFFF"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="#0A66C2" d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg></span>LinkedIn Ads</li><li class="tool"><span class="logo" style="background:#FFFFFF"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="#258FFA" d="M20.176 15.406a6.48 6.48 0 01-1.736 4.414c1.338-1.47.803-3.869-1.003-4.635-.862-.305-2.488-.85-3.367-1.158a1.834 1.834 0 01-.932-.818c-.381-.975-1.163-2.968-1.548-3.948-.095-.285-.31-.625-.265-.938.046-.598.724-1.003 1.276-.754l3.682 1.888c.621.292 1.305.692 1.796 1.172a6.486 6.486 0 012.097 4.777zm-1.44 1.888c-.264-1.194-1.135-1.744-2.216-2.028-1.527.902-4.853 2.878-6.952 4.13-1.103.68-2.13 1.35-2.919 1.242a2.866 2.866 0 01-2.77-2.325c-.012-.048-.008-.03-.001.01a6.4 6.4 0 00.947 2.653 6.498 6.498 0 005.486 3.022c1.908.062 3.536-1.153 5.099-2.096.292-.188.804-.496 1.332-.831l1.423-1.51c.553-.577.764-1.426.571-2.267zm-12.04 2.97c.422 0 .822-.1 1.173-.29.355-.215.964-.579 1.7-1.018L9.57 4.502c0-.99-.497-1.864-1.257-2.382-.08-.059-2.91-1.901-2.99-1.956-.605-.432-1.523.045-1.5.797v14.887l.417 2.36a2.488 2.488 0 002.455 2.056z"/></svg></span>Microsoft Bing Ads</li><li class="tool"><span class="logo" style="background:#FFFFFF"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="#000000" d="M12.525.02c1.31-.02 2.61-.01 3.91-.02.08 1.53.63 3.09 1.75 4.17 1.12 1.11 2.7 1.62 4.24 1.79v4.03c-1.44-.05-2.89-.35-4.2-.97-.57-.26-1.1-.59-1.62-.93-.01 2.92.01 5.84-.02 8.75-.08 1.4-.54 2.79-1.35 3.94-1.31 1.92-3.58 3.17-5.91 3.21-1.43.08-2.86-.31-4.08-1.03-2.02-1.19-3.44-3.37-3.65-5.71-.02-.5-.03-1-.01-1.49.18-1.9 1.12-3.72 2.58-4.96 1.66-1.44 3.98-2.13 6.15-1.72.02 1.48-.04 2.96-.04 4.44-.99-.32-2.15-.23-3.02.37-.63.41-1.11 1.04-1.36 1.75-.21.51-.15 1.07-.14 1.61.24 1.64 1.82 3.02 3.5 2.87 1.12-.01 2.19-.66 2.77-1.61.19-.33.4-.67.41-1.06.1-1.79.06-3.57.07-5.36.01-4.03-.01-8.05.02-12.07z"/></svg></span>TikTok Ads</li><li class="tool"><span class="logo" style="background:#FFFFFF"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="#FF0000" d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg></span>YouTube Ads</li></ul></article>
+<article class="tgroup" style="--c:#13806E"><div class="thead"><span class="ticon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 2 2 7l10 5 10-5-10-5Z"/><path d="m2 12 10 5 10-5"/><path d="m2 17 10 5 10-5"/></svg></span><span class="tcount">5 tools</span></div><h3>CRM &amp; Marketing Automation</h3><p>Lifecycle, email and website operations.</p><ul class="tools"><li class="tool"><span class="logo" style="background:#FFFFFF"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="#FF7A59" d="M18.164 7.93V5.084a2.198 2.198 0 001.267-1.978v-.067A2.2 2.2 0 0017.238.845h-.067a2.2 2.2 0 00-2.193 2.193v.067a2.196 2.196 0 001.252 1.973l.013.006v2.852a6.22 6.22 0 00-2.969 1.31l.012-.01-7.828-6.095A2.497 2.497 0 104.3 4.656l-.012.006 7.697 5.991a6.176 6.176 0 00-1.038 3.446c0 1.343.425 2.588 1.147 3.607l-.013-.02-2.342 2.343a1.968 1.968 0 00-.58-.095h-.002a2.033 2.033 0 102.033 2.033 1.978 1.978 0 00-.1-.595l.005.014 2.317-2.317a6.247 6.247 0 104.782-11.134l-.036-.005zm-.964 9.378a3.206 3.206 0 113.215-3.207v.002a3.206 3.206 0 01-3.207 3.207z"/></svg></span>HubSpot</li><li class="tool"><span class="logo" style="background:#FFFFFF"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="#00A1E0" d="M10.006 5.415a4.195 4.195 0 013.045-1.306c1.56 0 2.954.9 3.69 2.205.63-.3 1.35-.45 2.1-.45 2.85 0 5.159 2.34 5.159 5.22s-2.31 5.22-5.176 5.22c-.345 0-.69-.044-1.02-.104a3.75 3.75 0 01-3.3 1.95c-.6 0-1.155-.15-1.65-.375A4.314 4.314 0 018.88 20.4a4.302 4.302 0 01-4.05-2.82c-.27.062-.54.076-.825.076-2.204 0-4.005-1.8-4.005-4.05 0-1.5.811-2.805 2.01-3.51-.255-.57-.39-1.2-.39-1.846 0-2.58 2.1-4.65 4.65-4.65 1.53 0 2.85.705 3.72 1.8"/></svg></span>Salesforce</li><li class="tool"><span class="logo" style="background:#FFFFFF"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="#E42527" d="M8.66 6.897a1.299 1.299 0 0 0-1.205.765l-.642 1.44-.062-.385A1.291 1.291 0 0 0 5.27 7.648l-4.185.678A1.291 1.291 0 0 0 .016 9.807l.678 4.18a1.293 1.293 0 0 0 1.27 1.087c.074 0 .143-.01.216-.017l4.18-.678c.436-.07.784-.351.96-.723l2.933 1.307a1.304 1.304 0 0 0 .988.026c.321-.12.575-.365.716-.678l.28-.629.038.276a1.297 1.297 0 0 0 1.455 1.103l3.712-.501a1.29 1.29 0 0 0 1.03.514h4.236c.713 0 1.29-.58 1.291-1.291V9.545c0-.712-.58-1.291-1.291-1.291h-4.236c-.079 0-.155.008-.23.022a1.309 1.309 0 0 0-.275-.288c-.275-.21-.614-.3-.958-.253l-4.197.571c-.155.021-.3.07-.432.14L9.159 7.01a1.27 1.27 0 0 0-.499-.113zm-.025.705c.077 0 .159.013.24.052l2.971 1.324c-.128.238-.18.508-.142.782l.357 2.596h.002l-.745 1.672a.59.59 0 0 1-.777.296l-3.107-1.385-.004-.041-.41-2.526L8.1 7.95a.589.589 0 0 1 .536-.348zm-3.159.733c.125 0 .245.039.343.112.13.09.21.227.237.382l.234 1.446-.56 1.259a1.27 1.27 0 0 0-.026.987c.12.322.364.575.678.717l.295.131a.585.585 0 0 1-.428.314l-4.185.678a.59.59 0 0 1-.674-.485l-.678-4.18a.588.588 0 0 1 .485-.674l4.185-.678c.03-.004.064-.01.094-.01zm11.705.09a.59.59 0 0 1 .415.173 1.287 1.287 0 0 0-.416.947v4.237c0 .033.003.065.005.097l-3.55.482a.586.586 0 0 1-.66-.502l-.191-1.403.899-2.017a1.29 1.29 0 0 0-.333-1.5l3.754-.51c.026-.004.051-.004.077-.004zm1.3.532h4.227c.326 0 .588.266.588.588v4.237a.589.589 0 0 1-.588.588h-4.237a.564.564 0 0 1-.12-.013c.47-.246.758-.765.684-1.318zm-5.988.309.254.113c.296.133.43.48.296.777l-.432.97-.207-1.465a.58.58 0 0 1 .09-.395zm5.39.538.453 3.325a.583.583 0 0 1-.453.65zM6.496 11.545l.17 1.052a.588.588 0 0 1-.293-.776zm3.985 4.344a.588.588 0 0 0-.612.603c0 .358.244.61.601.61a.582.582 0 0 0 .607-.608c0-.35-.242-.605-.596-.605zm5.545 0a.588.588 0 0 0-.612.603c0 .358.245.61.602.61a.582.582 0 0 0 .606-.608c0-.35-.24-.605-.596-.605zm-8.537.018a.047.047 0 0 0-.048.047v.085c0 .026.021.047.048.047h.52l-.623.9a.052.052 0 0 0-.009.027v.027c0 .026.021.047.048.047h.815a.047.047 0 0 0 .047-.047v-.085a.047.047 0 0 0-.047-.047h-.55l.606-.9a.05.05 0 0 0 .008-.026v-.028a.047.047 0 0 0-.047-.047zm5.303 0a.047.047 0 0 0-.047.047v1.086c0 .026.02.047.047.047h.135a.047.047 0 0 0 .047-.047v-.454h.545v.454c0 .026.02.047.047.047h.134a.047.047 0 0 0 .047-.047v-1.086a.047.047 0 0 0-.047-.047h-.134a.047.047 0 0 0-.047.047v.453h-.545v-.453a.047.047 0 0 0-.047-.047zm-2.324.164c.25 0 .372.194.372.425 0 .219-.109.425-.358.426-.242 0-.375-.197-.375-.419 0-.235.108-.432.36-.432zm5.545 0c.25 0 .372.194.372.425 0 .219-.108.425-.358.426-.242 0-.374-.197-.374-.419 0-.235.108-.432.36-.432z"/></svg></span>Zoho CRM</li><li class="tool"><span class="logo" style="background:#16211F"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="#FFE01B" d="M11.267 0C6.791-.015-1.82 10.246 1.397 12.964l.79.669a3.88 3.88 0 0 0-.22 1.792c.084.84.518 1.644 1.22 2.266.666.59 1.542.964 2.392.964 1.406 3.24 4.62 5.228 8.386 5.34 4.04.12 7.433-1.776 8.854-5.182.093-.24.488-1.316.488-2.267 0-.956-.54-1.352-.885-1.352-.01-.037-.078-.286-.172-.586-.093-.3-.19-.51-.19-.51.375-.563.382-1.065.332-1.35-.053-.353-.2-.653-.496-.964-.296-.311-.902-.63-1.753-.868l-.446-.124c-.002-.019-.024-1.053-.043-1.497-.014-.32-.042-.822-.197-1.315-.186-.668-.508-1.253-.911-1.627 1.112-1.152 1.806-2.422 1.804-3.511-.003-2.095-2.576-2.729-5.746-1.416l-.672.285A678.22 678.22 0 0 0 12.7.504C12.304.159 11.817.002 11.267 0zm.073.873c.166 0 .322.019.465.058.297.084 1.28 1.224 1.28 1.224s-1.826 1.013-3.52 2.426c-2.28 1.757-4.005 4.311-5.037 7.082-.811.158-1.526.618-1.963 1.253-.261-.218-.748-.64-.834-.804-.698-1.326.761-3.902 1.781-5.357C5.834 3.44 9.37.867 11.34.873zm3.286 3.273c.04-.002.06.05.028.074-.143.11-.299.26-.413.414a.04.04 0 0 0 .031.064c.659.004 1.587.235 2.192.574.041.023.012.103-.034.092-.915-.21-2.414-.369-3.97.01-1.39.34-2.45.863-3.224 1.426-.04.028-.086-.023-.055-.06.896-1.035 1.999-1.935 2.987-2.44.034-.018.07.019.052.052-.079.143-.23.447-.278.678-.007.035.032.063.062.042.615-.42 1.684-.868 2.622-.926zm3.023 3.205l.056.001a.896.896 0 0 1 .456.146c.534.355.61 1.216.638 1.845.015.36.059 1.229.074 1.478.034.571.184.651.487.751.17.057.33.098.563.164.706.198 1.125.4 1.39.658.157.162.23.333.253.497.083.608-.472 1.36-1.942 2.041-1.607.746-3.557.935-4.904.785l-.471-.053c-1.078-.145-1.693 1.247-1.046 2.201.417.615 1.552 1.015 2.688 1.015 2.604 0 4.605-1.111 5.35-2.072a.987.987 0 0 0 .06-.085c.036-.055.006-.085-.04-.054-.608.416-3.31 2.069-6.2 1.571 0 0-.351-.057-.672-.182-.255-.1-.788-.344-.853-.891 2.333.72 3.801.039 3.801.039a.072.072 0 0 0 .042-.072.067.067 0 0 0-.074-.06s-1.911.283-3.718-.378c.197-.64.72-.408 1.51-.345a11.045 11.045 0 0 0 3.647-.394c.818-.234 1.892-.697 2.727-1.356.281.618.38 1.299.38 1.299s.219-.04.4.073c.173.106.299.326.213.895-.176 1.063-.628 1.926-1.387 2.72a5.714 5.714 0 0 1-1.666 1.244c-.34.18-.704.334-1.087.46-2.863.935-5.794-.093-6.739-2.3a3.545 3.545 0 0 1-.189-.522c-.403-1.455-.06-3.2 1.008-4.299.065-.07.132-.153.132-.256 0-.087-.055-.179-.102-.243-.374-.543-1.669-1.466-1.409-3.254.187-1.284 1.31-2.189 2.357-2.135.089.004.177.01.266.015.453.027.85.085 1.223.1.625.028 1.187-.063 1.853-.618.225-.187.405-.35.71-.401.028-.005.092-.028.215-.028zm.022 2.18a.42.42 0 0 0-.06.005c-.335.054-.347.468-.228 1.04.068.32.187.595.32.765.175-.02.343-.022.498 0 .089-.205.104-.557.024-.942-.112-.535-.261-.872-.554-.868zm-3.66 1.546a1.724 1.724 0 0 0-1.016.326c-.16.117-.311.28-.29.378.008.032.031.056.088.063.131.015.592-.217 1.122-.25.374-.023.684.094.923.2.239.104.386.173.443.113.037-.038.026-.11-.031-.204-.118-.192-.36-.387-.618-.497a1.601 1.601 0 0 0-.621-.129zm4.082.81c-.171-.003-.313.186-.317.42-.004.236.131.43.303.432.172.003.314-.185.318-.42.004-.236-.132-.429-.304-.432zm-3.58.172c-.05 0-.102.002-.155.008-.311.05-.483.152-.593.247-.094.082-.152.173-.152.237a.075.075 0 0 0 .075.076c.07 0 .228-.063.228-.063a1.98 1.98 0 0 1 1.001-.104c.157.018.23.027.265-.026.01-.016.022-.049-.01-.1-.063-.103-.311-.269-.66-.275zm2.26.4c-.127 0-.235.051-.283.148-.075.154.035.363.246.466.21.104.443.063.52-.09.075-.155-.035-.364-.246-.467a.542.542 0 0 0-.237-.058zm-11.635.024c.048 0 .098 0 .149.003.73.04 1.806.6 2.052 2.19.217 1.41-.128 2.843-1.449 3.069-.123.02-.248.029-.374.026-1.22-.033-2.539-1.132-2.67-2.435-.145-1.44.591-2.548 1.894-2.811.117-.024.252-.04.398-.042zm-.07.927a1.144 1.144 0 0 0-.847.364c-.38.418-.439.988-.366 1.19.027.073.07.094.1.098.064.008.16-.039.22-.2a1.2 1.2 0 0 0 .017-.052 1.58 1.58 0 0 1 .157-.37.689.689 0 0 1 .955-.199c.266.174.369.5.255.81-.058.161-.154.469-.133.721.043.511.357.717.64.738.274.01.466-.143.515-.256.029-.067.005-.107-.011-.125-.043-.053-.113-.037-.18-.021a.638.638 0 0 1-.16.022.347.347 0 0 1-.294-.148c-.078-.12-.073-.3.013-.504.011-.028.025-.058.04-.092.138-.308.368-.825.11-1.317-.195-.37-.513-.602-.894-.65a1.135 1.135 0 0 0-.138-.01z"/></svg></span>Mailchimp</li><li class="tool"><span class="logo" style="background:#FFFFFF"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="#21759B" d="M21.469 6.825c.84 1.537 1.318 3.3 1.318 5.175 0 3.979-2.156 7.456-5.363 9.325l3.295-9.527c.615-1.54.82-2.771.82-3.864 0-.405-.026-.78-.07-1.11m-7.981.105c.647-.03 1.232-.105 1.232-.105.582-.075.514-.93-.067-.899 0 0-1.755.135-2.88.135-1.064 0-2.85-.15-2.85-.15-.585-.03-.661.855-.075.885 0 0 .54.061 1.125.09l1.68 4.605-2.37 7.08L5.354 6.9c.649-.03 1.234-.1 1.234-.1.585-.075.516-.93-.065-.896 0 0-1.746.138-2.874.138-.2 0-.438-.008-.69-.015C4.911 3.15 8.235 1.215 12 1.215c2.809 0 5.365 1.072 7.286 2.833-.046-.003-.091-.009-.141-.009-1.06 0-1.812.923-1.812 1.914 0 .89.513 1.643 1.06 2.531.411.72.89 1.643.89 2.977 0 .915-.354 1.994-.821 3.479l-1.075 3.585-3.9-11.61.001.014zM12 22.784c-1.059 0-2.081-.153-3.048-.437l3.237-9.406 3.315 9.087c.024.053.05.101.078.149-1.12.393-2.325.609-3.582.609M1.211 12c0-1.564.336-3.05.935-4.39L7.29 21.709C3.694 19.96 1.212 16.271 1.211 12M12 0C5.385 0 0 5.385 0 12s5.385 12 12 12 12-5.385 12-12S18.615 0 12 0"/></svg></span>WordPress</li></ul></article>
+<article class="tgroup" style="--c:#1D1D1F"><div class="thead"><span class="ticon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 2 2 7l10 5 10-5-10-5Z"/><path d="m2 12 10 5 10-5"/><path d="m2 17 10 5 10-5"/></svg></span><span class="tcount">8 tools</span></div><h3>Product, Web &amp; AI</h3><p>The stack behind Revynex, my own SaaS product.</p><ul class="tools"><li class="tool"><span class="logo" style="background:#FFFFFF"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="#000000" d="M18.665 21.978C16.758 23.255 14.465 24 12 24 5.377 24 0 18.623 0 12S5.377 0 12 0s12 5.377 12 12c0 3.583-1.574 6.801-4.067 9.001L9.219 7.2H7.2v9.596h1.615V9.251l9.85 12.727Zm-3.332-8.533 1.6 2.061V7.2h-1.6v6.245Z"/></svg></span>Next.js</li><li class="tool"><span class="logo" style="background:#FFFFFF"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="#000000" d="M24 22.525H0l12-21.05 12 21.05z"/></svg></span>Vercel</li><li class="tool"><span class="logo" style="background:#FFFFFF"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="#F38020" d="M16.5088 16.8447c.1475-.5068.0908-.9707-.1553-1.3154-.2246-.3164-.6045-.499-1.0615-.5205l-8.6592-.1123a.1559.1559 0 0 1-.1333-.0713c-.0283-.042-.0351-.0986-.021-.1553.0278-.084.1123-.1484.2036-.1562l8.7359-.1123c1.0351-.0489 2.1601-.8868 2.5537-1.9136l.499-1.3013c.0215-.0561.0293-.1128.0147-.168-.5625-2.5463-2.835-4.4453-5.5499-4.4453-2.5039 0-4.6284 1.6177-5.3876 3.8614-.4927-.3658-1.1187-.5625-1.794-.499-1.2026.119-2.1665 1.083-2.2861 2.2856-.0283.31-.0069.6128.0635.894C1.5683 13.171 0 14.7754 0 16.752c0 .1748.0142.3515.0352.5273.0141.083.0844.1475.1689.1475h15.9814c.0909 0 .1758-.0645.2032-.1553l.12-.4268zm2.7568-5.5634c-.0771 0-.1611 0-.2383.0112-.0566 0-.1054.0415-.127.0976l-.3378 1.1744c-.1475.5068-.0918.9707.1543 1.3164.2256.3164.6055.498 1.0625.5195l1.8437.1133c.0557 0 .1055.0263.1329.0703.0283.043.0351.1074.0214.1562-.0283.084-.1132.1485-.204.1553l-1.921.1123c-1.041.0488-2.1582.8867-2.5527 1.914l-.1406.3585c-.0283.0713.0215.1416.0986.1416h6.5977c.0771 0 .1474-.0489.169-.126.1122-.4082.1757-.837.1757-1.2803 0-2.6025-2.125-4.727-4.7344-4.727"/></svg></span>Cloudflare</li><li class="tool"><span class="logo" style="background:#FFFFFF"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="#000000" d="M9.854 14.5 5 9.647.854 5.5A.5.5 0 0 0 0 5.854V8.44a.5.5 0 0 0 .146.353L5 13.647l.147.146L9.854 18.5l.146.147v-.049c.065.03.134.049.207.049h2.586a.5.5 0 0 0 .353-.854L9.854 14.5zm0-5-4-4a.487.487 0 0 0-.409-.144.515.515 0 0 0-.356.21.493.493 0 0 0-.089.288V8.44a.5.5 0 0 0 .147.353l9 9a.5.5 0 0 0 .853-.354v-2.585a.5.5 0 0 0-.146-.354l-5-5zm1-4a.5.5 0 0 0-.854.354V8.44a.5.5 0 0 0 .147.353l4 4a.5.5 0 0 0 .853-.354V9.854a.5.5 0 0 0-.146-.354l-4-4zm12.647 11.515a3.863 3.863 0 0 1-2.232-1.1l-4.708-4.707a.5.5 0 0 0-.854.354v6.585a.5.5 0 0 0 .5.5H23.5a.5.5 0 0 0 .5-.5v-.6c0-.276-.225-.497-.499-.532zm-5.394.032a.8.8 0 1 1 0-1.6.8.8 0 0 1 0 1.6zM.854 15.5a.5.5 0 0 0-.854.354v2.293a.5.5 0 0 0 .5.5h2.293c.222 0 .39-.135.462-.309a.493.493 0 0 0-.109-.545L.854 15.501zM5 14.647.854 10.5a.5.5 0 0 0-.854.353v2.586a.5.5 0 0 0 .146.353L4.854 18.5l.146.147h2.793a.5.5 0 0 0 .353-.854L5 14.647z"/></svg></span>PostHog</li><li class="tool"><span class="logo" style="background:#FFFFFF"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="#008CDD" d="M13.976 9.15c-2.172-.806-3.356-1.426-3.356-2.409 0-.831.683-1.305 1.901-1.305 2.227 0 4.515.858 6.09 1.631l.89-5.494C18.252.975 15.697 0 12.165 0 9.667 0 7.589.654 6.104 1.872 4.56 3.147 3.757 4.992 3.757 7.218c0 4.039 2.467 5.76 6.476 7.219 2.585.92 3.445 1.574 3.445 2.583 0 .98-.84 1.545-2.354 1.545-1.875 0-4.965-.921-6.99-2.109l-.9 5.555C5.175 22.99 8.385 24 11.714 24c2.641 0 4.843-.624 6.328-1.813 1.664-1.305 2.525-3.236 2.525-5.732 0-4.128-2.524-5.851-6.594-7.305h.003z"/></svg></span>Stripe</li><li class="tool"><span class="logo" style="background:#FFFFFF"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="#000000" d="M2.023 0v24h5.553v-8.434h2.998L15.326 24h6.65l-5.372-9.258a7.652 7.652 0 0 0 3.316-3.016c.709-1.21 1.062-2.57 1.062-4.08 0-1.462-.353-2.767-1.062-3.91-.709-1.165-1.692-2.079-2.95-2.742C15.737.331 14.355 0 12.823 0Zm5.553 4.87h4.219c.731 0 1.349.125 1.851.376.526.252.925.618 1.2 1.098.274.457.412.994.412 1.611S15.132 9.12 14.88 9.6c-.229.48-.572.856-1.03 1.13-.434.252-.948.38-1.542.38H7.576Z"/></svg></span>Resend</li><li class="tool"><span class="logo" style="background:#FFFFFF"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="#47A248" d="M17.193 9.555c-1.264-5.58-4.252-7.414-4.573-8.115-.28-.394-.53-.954-.735-1.44-.036.495-.055.685-.523 1.184-.723.566-4.438 3.682-4.74 10.02-.282 5.912 4.27 9.435 4.888 9.884l.07.05A73.49 73.49 0 0111.91 24h.481c.114-1.032.284-2.056.51-3.07.417-.296.604-.463.85-.693a11.342 11.342 0 003.639-8.464c.01-.814-.103-1.662-.197-2.218zm-5.336 8.195s0-8.291.275-8.29c.213 0 .49 10.695.49 10.695-.381-.045-.765-1.76-.765-2.405z"/></svg></span>MongoDB</li><li class="tool"><span class="logo" style="background:#FFFFFF"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="#191919" d="M17.3041 3.541h-3.6718l6.696 16.918H24Zm-10.6082 0L0 20.459h3.7442l1.3693-3.5527h7.0052l1.3693 3.5528h3.7442L10.5363 3.5409Zm-.3712 10.2232 2.2914-5.9456 2.2914 5.9456Z"/></svg></span>Claude</li></ul></article>
+<article class="tgroup" style="--c:#6A4BB5"><div class="thead"><span class="ticon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 2 2 7l10 5 10-5-10-5Z"/><path d="m2 12 10 5 10-5"/><path d="m2 17 10 5 10-5"/></svg></span><span class="tcount">6 tools</span></div><h3>Collaboration &amp; Workflow</h3><p>How I work with teams and ship work.</p><ul class="tools"><li class="tool"><span class="logo" style="background:#FFFFFF"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="#181717" d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg></span>GitHub</li><li class="tool"><span class="logo" style="background:#FFFFFF"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="#4A154B" d="M5.042 15.165a2.528 2.528 0 0 1-2.52 2.523A2.528 2.528 0 0 1 0 15.165a2.527 2.527 0 0 1 2.522-2.52h2.52v2.52zM6.313 15.165a2.527 2.527 0 0 1 2.521-2.52 2.527 2.527 0 0 1 2.521 2.52v6.313A2.528 2.528 0 0 1 8.834 24a2.528 2.528 0 0 1-2.521-2.522v-6.313zM8.834 5.042a2.528 2.528 0 0 1-2.521-2.52A2.528 2.528 0 0 1 8.834 0a2.528 2.528 0 0 1 2.521 2.522v2.52H8.834zM8.834 6.313a2.528 2.528 0 0 1 2.521 2.521 2.528 2.528 0 0 1-2.521 2.521H2.522A2.528 2.528 0 0 1 0 8.834a2.528 2.528 0 0 1 2.522-2.521h6.312zM18.956 8.834a2.528 2.528 0 0 1 2.522-2.521A2.528 2.528 0 0 1 24 8.834a2.528 2.528 0 0 1-2.522 2.521h-2.522V8.834zM17.688 8.834a2.528 2.528 0 0 1-2.523 2.521 2.527 2.527 0 0 1-2.52-2.521V2.522A2.527 2.527 0 0 1 15.165 0a2.528 2.528 0 0 1 2.523 2.522v6.312zM15.165 18.956a2.528 2.528 0 0 1 2.523 2.522A2.528 2.528 0 0 1 15.165 24a2.527 2.527 0 0 1-2.52-2.522v-2.522h2.52zM15.165 17.688a2.527 2.527 0 0 1-2.52-2.523 2.526 2.526 0 0 1 2.52-2.52h6.313A2.527 2.527 0 0 1 24 15.165a2.528 2.528 0 0 1-2.522 2.523h-6.313z"/></svg></span>Slack</li><li class="tool"><span class="logo" style="background:#FFFFFF"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="#0B5CFF" d="M5.033 14.649H.743a.74.74 0 0 1-.686-.458.74.74 0 0 1 .16-.808L3.19 10.41H1.06A1.06 1.06 0 0 1 0 9.35h3.957c.301 0 .57.18.686.458a.74.74 0 0 1-.161.808L1.51 13.59h2.464c.585 0 1.06.475 1.06 1.06zM24 11.338c0-1.14-.927-2.066-2.066-2.066-.61 0-1.158.265-1.537.686a2.061 2.061 0 0 0-1.536-.686c-1.14 0-2.066.926-2.066 2.066v3.311a1.06 1.06 0 0 0 1.06-1.06v-2.251a1.004 1.004 0 0 1 2.013 0v2.251c0 .586.474 1.06 1.06 1.06v-3.311a1.004 1.004 0 0 1 2.012 0v2.251c0 .586.475 1.06 1.06 1.06zM16.265 12a2.728 2.728 0 1 1-5.457 0 2.728 2.728 0 0 1 5.457 0zm-1.06 0a1.669 1.669 0 1 0-3.338 0 1.669 1.669 0 0 0 3.338 0zm-4.82 0a2.728 2.728 0 1 1-5.458 0 2.728 2.728 0 0 1 5.457 0zm-1.06 0a1.669 1.669 0 1 0-3.338 0 1.669 1.669 0 0 0 3.338 0z"/></svg></span>Zoom</li><li class="tool"><span class="logo" style="background:#FFFFFF"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="#004680" d="M22.597 24H1.406A1.41 1.41 0 0 1 0 22.594V1.406A1.41 1.41 0 0 1 1.406 0h21.191a1.41 1.41 0 0 1 1.406 1.406v21.188A1.41 1.41 0 0 1 22.597 24zM11.911 2.109c-5.405.047-9.763 4.482-9.802 9.89-.04 5.507 4.381 9.885 9.89 9.89 5.415.003 9.796-4.5 9.89-9.89.097-5.572-4.406-9.939-9.978-9.89zM9.65 8.633l-.889 2.159H15.3l-.889-2.159 6.642 3.365-6.642 3.365.889-2.159H8.761l.882 2.159-6.659-3.365z"/></svg></span>TeamViewer</li><li class="tool"><span class="logo" style="background:#FFFFFF"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="#4285F4" d="M14.727 6.727H14V0H4.91c-.905 0-1.637.732-1.637 1.636v20.728c0 .904.732 1.636 1.636 1.636h14.182c.904 0 1.636-.732 1.636-1.636V6.727h-6zm-.545 10.455H7.09v-1.364h7.09v1.364zm2.727-3.273H7.091v-1.364h9.818v1.364zm0-3.273H7.091V9.273h9.818v1.363zM14.727 6h6l-6-6v6z"/></svg></span>Google Docs</li><li class="tool"><span class="logo" style="background:#FFFFFF"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="#B7472A" d="M13.5 1.5q1.453 0 2.795.375 1.342.375 2.508 1.06 1.166.686 2.12 1.641.956.955 1.641 2.121.686 1.166 1.061 2.508Q24 10.547 24 12q0 1.453-.375 2.795-.375 1.342-1.06 2.508-.686 1.166-1.641 2.12-.955.956-2.121 1.641-1.166.686-2.508 1.061-1.342.375-2.795.375-1.29 0-2.52-.305-1.23-.304-2.337-.884-1.108-.58-2.063-1.418-.955-.838-1.693-1.893H.997q-.411 0-.704-.293T0 17.004V6.996q0-.41.293-.703T.996 6h3.89q.739-1.055 1.694-1.893.955-.837 2.063-1.418 1.107-.58 2.337-.884Q12.21 1.5 13.5 1.5zm.75 1.535v8.215h8.215q-.14-1.64-.826-3.076-.686-1.436-1.782-2.531-1.095-1.096-2.537-1.782-1.441-.685-3.07-.826zm-5.262 7.57q0-.68-.228-1.166-.229-.486-.627-.79-.399-.305-.938-.446-.539-.14-1.172-.14H2.848v7.863h1.84v-2.742H5.93q.574 0 1.119-.17t.978-.493q.434-.322.698-.802.263-.48.263-1.114zM13.5 21q1.172 0 2.262-.287t2.056-.82q.967-.534 1.776-1.278.808-.744 1.418-1.664.61-.92.984-1.986.375-1.067.469-2.227h-9.703V3.035q-1.735.14-3.27.908T6.797 6h4.207q.41 0 .703.293t.293.703v10.008q0 .41-.293.703t-.703.293H6.797q.644.715 1.412 1.271.768.557 1.623.944.855.387 1.781.586Q12.54 21 13.5 21zM5.812 9.598q.575 0 .915.228.34.229.34.838 0 .27-.124.44-.123.17-.31.275-.188.105-.422.146-.234.041-.445.041H4.687V9.598Z"/></svg></span>PowerPoint</li></ul></article>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec" id="experience">
+    <div class="wrap">
+      <div class="shead"><p class="eyebrow">Experience</p><h2>Where I've made an impact.</h2><p>Most recent first. Highlighted figures are measured outcomes.</p></div>
+      <div class="jobs">
+        <article class="job founder">
+          <div class="when">2026 – Present<br><span class="tag">Founder</span></div>
+          <div>
+            <h3>Founder &amp; Growth Lead</h3>
+            <p class="co">Revynex · B2B SaaS · <a href="https://revynex.io" target="_blank" rel="noopener">revynex.io</a></p>
+            <ul>
+              <li>Founded Revynex, an AI revenue and growth analyst for early-stage B2B SaaS teams ($500K–$10M ARR) that have no RevOps hire or analyst.</li>
+              <li>Defined the product: it connects HubSpot, Salesforce or Pipedrive plus Stripe and sends a daily brief on what changed in pipeline and revenue, why, and what to do next.</li>
+              <li>Own positioning, messaging and go-to-market, including pricing from $99 a month and a free 14-day trial.</li>
+              <li>Built and launched the marketing site on Next.js with an SEO-first structure: solution, comparison and framework pages, structured data and a canonical strategy.</li>
+              <li>Set up product analytics in PostHog and lifecycle email in Resend to track the funnel from visit to trial to paid.</li>
+              <li>Manage subprocessors and GDPR-aligned data practices so the product is ready for customer due diligence.</li>
+            </ul>
+          </div>
+        </article>
+        <article class="job">
+          <div class="when">Feb 2025 – Aug 2025<br><span class="tag">Freelance</span></div>
+          <div>
+            <h3>Digital Marketing Analyst / Growth Strategist</h3>
+            <p class="co">CampusHut Ltd · EdTech</p>
+            <ul>
+              <li>Ran cohort and funnel analysis on student and user behaviour, improving retention by up to <span class="hl">35%</span>.</li>
+              <li>Managed paid campaigns on Google, Meta, LinkedIn and TikTok with continuous A/B testing, cutting CAC by <span class="hl">27%</span>.</li>
+              <li>Built predictive models to forecast user behaviour, campaign performance and lifetime value.</li>
+              <li>Built automated GA4 and Power BI dashboards tracking acquisition, engagement, CTR, ROI and funnel conversion.</li>
+              <li>Automated reporting and lifecycle email through CRM tools, speeding up lead nurturing and campaign turnaround.</li>
+            </ul>
+          </div>
+        </article>
+        <article class="job">
+          <div class="when">Oct 2024 – Aug 2025<br><span class="tag">Internship · UK</span></div>
+          <div>
+            <h3>Data Analyst</h3>
+            <p class="co">10Alytics</p>
+            <ul>
+              <li>Cleaned, transformed and explored datasets in SQL, Python and Excel.</li>
+              <li>Built Tableau and Power BI dashboards for revenue, churn and acquisition, cutting manual reporting time by <span class="hl">35%</span>.</li>
+              <li>Built forecasting models that improved budget accuracy by <span class="hl">15%</span>, and ran actual-vs-forecast variance analysis.</li>
+              <li>Ran eCommerce funnel analysis to find drop-off points and recommend conversion fixes.</li>
+              <li>Delivered a capstone project combining statistics, visualisation and business recommendations.</li>
+            </ul>
+          </div>
+        </article>
+        <article class="job">
+          <div class="when">Jul 2023 – Mar 2025<br><span class="tag">Contract</span></div>
+          <div>
+            <h3>Marketing Analyst / Digital Marketing Manager</h3>
+            <p class="co">HigherAd · EdTech</p>
+            <ul>
+              <li>Optimised PPC across Google Ads, Bing and LinkedIn, cutting CPC by <span class="hl">18%</span> and lifting ROI by <span class="hl">22%</span> in six months.</li>
+              <li>Built a Python and Scikit-Learn churn model to flag high-value customers at risk, improving retention by <span class="hl">20%</span>.</li>
+              <li>Ran machine-learning customer segmentation for personalised campaigns, raising engagement by <span class="hl">25%</span>.</li>
+              <li>Ran multi-touch attribution in SQL and moved budget to the strongest channels, adding <span class="hl">15%</span> ROI.</li>
+              <li>Built Tableau and Excel executive dashboards that cut reporting time by <span class="hl">30%</span>.</li>
+              <li>Worked with product and sales on launches that gained <span class="hl">10%</span> market share in the first quarter.</li>
+            </ul>
+          </div>
+        </article>
+        <article class="job">
+          <div class="when">Jun 2021 – Oct 2023<br><span class="tag">Full-time</span></div>
+          <div>
+            <h3>Digital Advertising Specialist</h3>
+            <p class="co">IDP Education (formerly Intake Education) · EdTech</p>
+            <ul>
+              <li>Cut cost per lead from <span class="hl">£6.0 to £1.8</span> on Google Ads and Meta, generating 69.9% of all leads for a major education exhibition.</li>
+              <li>Ran a £15,000 campaign that beat registration targets by <span class="hl">149.7%</span> and attendance by <span class="hl">229.1%</span> on 89% of budget.</li>
+              <li>Restructured targeting for Intake Ghana, lifting high-quality leads by <span class="hl">79.3%</span>.</li>
+              <li>Managed a £30,000 campaign for the University of Dundee whose results secured a second £30,000 phase.</li>
+              <li>Revamped SEO and content strategy, growing organic traffic by <span class="hl">40%</span> in 12 months.</li>
+              <li>Built performance tracking that raised ad efficiency by <span class="hl">25%</span>, and presented insights to senior stakeholders across markets.</li>
+            </ul>
+          </div>
+        </article>
+        <article class="job">
+          <div class="when">Sep 2019 – May 2021<br><span class="tag">Full-time</span></div>
+          <div>
+            <h3>Digital Marketing Specialist</h3>
+            <p class="co">Nuts About Cakes · eCommerce</p>
+            <ul>
+              <li>Ran PPC, SEO, email and social programmes that grew website traffic by <span class="hl">35%</span> in a year.</li>
+              <li>Cut Google and Meta CPC by <span class="hl">30%</span> in the first 90 days without losing conversion rate.</li>
+              <li>Grew organic search traffic by <span class="hl">50%</span> in six months through keyword and content work.</li>
+              <li>Segmented email campaigns, lifting open rates by <span class="hl">20%</span> and conversions by <span class="hl">15%</span>.</li>
+              <li>Analysed product and checkout funnels and improved the WordPress site, raising engagement by <span class="hl">25%</span>.</li>
+              <li>Held paid media to a steady <span class="hl">5.2%</span> weekly cost-to-revenue ratio.</li>
+            </ul>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec band" id="results">
+    <div class="wrap">
+      <div class="shead"><p class="eyebrow">Selected results</p><h2>Campaign wins, by the numbers.</h2><p>Three IDP Education campaigns where restructured targeting and tracking changed the cost of growth.</p></div>
+      <div class="cases">
+        <article class="case s1"><span class="lab">Education exhibition · Google &amp; Meta</span><div class="fromto"><s>£6.0</s><b>£1.8</b></div><h3>Cost per lead</h3><p>Generated 69.9% of all exhibition leads. A related £15,000 campaign beat registrations by 149.7% on 89% of budget.</p></article>
+        <article class="case s2"><span class="lab">Intake Ghana · Google Ads</span><div class="fromto"><s>£11.1</s><b>£2.4</b></div><h3>Cost per lead</h3><p>Rebuilt audience targeting and campaign structure, contributing to a 79.3% rise in high-quality leads.</p></article>
+        <article class="case s3"><span class="lab">Intake Ghana · Meta</span><div class="fromto"><s>£2.9</s><b>£0.9</b></div><h3>Cost per lead</h3><p>Paired with the Google rebuild, so both channels delivered cheaper, better-qualified leads.</p></article>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec" id="projects">
+    <div class="wrap">
+      <div class="shead"><p class="eyebrow">Projects</p><h2>Selected analysis work.</h2><p>Independent projects on public and demo datasets.</p></div>
+      <div class="projects">
+        <article class="pj"><div class="top-row"><span class="chip">GA4 · Demo Store</span></div><h3>eCommerce funnel breakdown</h3><p>Traced the path from product view to checkout, found the main drop-off points and recommended CRO changes.</p><span class="out">Projected 15% conversion uplift</span></article>
+        <article class="pj"><div class="top-row"><span class="chip">Mailchimp</span></div><h3>Email campaign performance</h3><p>Reported open, click, bounce and conversion rates, then reworked audience segmentation.</p><span class="out">11% higher click-through rate</span></article>
+        <article class="pj"><div class="top-row"><span class="chip">Power BI</span></div><h3>Marketing KPI dashboard</h3><p>Executive-level view of CAC, LTV, churn and impressions in one place.</p><span class="out">CAC, LTV and churn in one view</span></article>
+        <article class="pj"><div class="top-row"><span class="chip">Excel</span></div><h3>Customer purchase behaviour</h3><p>Interactive dashboard on purchase patterns across demographics, loyalty groups and regions.</p><span class="out">Segment-level purchase insight</span></article>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec band" id="education">
+    <div class="wrap">
+      <div class="shead"><p class="eyebrow">Education</p><h2>Education &amp; certifications.</h2></div>
+      <div class="edu">
+        <div class="ed"><span class="kind">Degree</span><span class="yr">2018</span><h3>BSc Business Administration</h3><p>Ekiti State University, Nigeria</p></div>
+        <div class="ed"><span class="kind">Training</span><span class="yr">2024</span><h3>Data Science</h3><p>10Alytics, United Kingdom</p></div>
+        <div class="ed"><span class="kind">Certification</span><span class="yr">2023</span><h3>Google Analytics 4 (GA4)</h3><p>LinkedIn Learning</p></div>
+        <div class="ed"><span class="kind">Diploma</span><span class="yr">2019</span><h3>Professional Diploma in Digital Marketing</h3><p>Digital Marketing Skills Institute</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec" id="contact">
+    <div class="wrap">
+      <div class="contact">
+        <div>
+          <p class="eyebrow">Contact</p>
+          <h2>Let's talk about growth.</h2>
+          <p>I'm open to growth, performance marketing, digital marketing and marketing analytics roles in the UK or remote, and to contract work on campaigns, dashboards and go-to-market.</p>
+        </div>
+        <div class="lines">
+          <div class="line"><div><span class="k">Email</span><span class="v" id="em">oluwatobi.olaopa@gmail.com</span></div><button class="copy" type="button" data-copy="em">Copy</button></div>
+          <div class="line"><div><span class="k">Phone</span><span class="v" id="ph">+44 7979 127731</span></div><button class="copy" type="button" data-copy="ph">Copy</button></div>
+          <div class="line"><div><span class="k">LinkedIn</span><a class="v" href="https://www.linkedin.com/in/oluwatobi-olaopa/" target="_blank" rel="noopener">linkedin.com/in/oluwatobi-olaopa ↗</a></div></div>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer><div class="wrap"><span class="name">Oluwatobi Olaopa<i>.</i></span><span>© 2026 · Sheffield, England</span></div></footer>
+
+<script>
+var burger=document.getElementById('burger'), drawer=document.getElementById('drawer');
+burger.addEventListener('click',function(){drawer.hidden=!drawer.hidden;burger.setAttribute('aria-expanded',String(!drawer.hidden))});
+drawer.addEventListener('click',function(e){if(e.target.tagName==='A'){drawer.hidden=true;burger.setAttribute('aria-expanded','false')}});
+document.querySelectorAll('.copy').forEach(function(b){
+  b.addEventListener('click',function(){
+    var el=document.getElementById(b.dataset.copy), t=el.textContent.trim();
+    function done(){b.textContent='Copied';setTimeout(function(){b.textContent='Copy'},1600)}
+    function select(){var r=document.createRange();r.selectNodeContents(el);var s=getSelection();s.removeAllRanges();s.addRange(r);b.textContent='Selected'}
+    try{navigator.clipboard.writeText(t).then(done,select)}catch(e){select()}
+  });
+});
+</script>
+
+</body>
+</html>
