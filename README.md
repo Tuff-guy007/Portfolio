@@ -23,5 +23,8 @@ You can point a domain such as `oluwatobi.revynex.io` or `oluwatobiolaopa.com` a
 - **Profile → Add profile section → Recommended → Add featured → Add a link**, and paste the site URL.
 - Also add it under **Contact info → Website** (type: Portfolio).
 
+## CV
+The "Download CV" buttons link to `Oluwatobi-Olaopa-CV.pdf`. To update your CV, replace that file with a new PDF of the same name.
+
 ## Editing
 All content lives in `index.html`. Search for the text you want to change and edit it directly.
